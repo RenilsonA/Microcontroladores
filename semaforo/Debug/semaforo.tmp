@@ -1,0 +1,37 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.2.8</VERSION>
+ <DEVICE>"ATmega328P"</DEVICE>
+ <WORKING_DIR>C:\Users\moniq\Documents\Atmel Studio\7.0\Semaforo\semaforo\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc</DIR>
+  <DIR>C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avrassembler\Include</DIR>
+  <DIR></DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>C:\Users\moniq\Documents\Atmel Studio\7.0\Semaforo\semaforo\main.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc\m328Pdef.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>C:\Users\moniq\Documents\Atmel Studio\7.0\Semaforo\semaforo\Debug\semaforo.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>semaforo.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>semaforo.map</FILE>
+  <FILE>semaforo.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <reset><FILE>C:\Users\moniq\Documents\Atmel Studio\7.0\Semaforo\semaforo\main.asm</FILE><LINE>39</LINE></reset>
+  <Time_Interrupt><FILE>C:\Users\moniq\Documents\Atmel Studio\7.0\Semaforo\semaforo\main.asm</FILE><LINE>19</LINE></Time_Interrupt>
+  <LOOP><FILE>C:\Users\moniq\Documents\Atmel Studio\7.0\Semaforo\semaforo\main.asm</FILE><LINE>83</LINE></LOOP>
+  <E1><FILE>C:\Users\moniq\Documents\Atmel Studio\7.0\Semaforo\semaforo\main.asm</FILE><LINE>109</LINE></E1>
+  <E2><FILE>C:\Users\moniq\Documents\Atmel Studio\7.0\Semaforo\semaforo\main.asm</FILE><LINE>117</LINE></E2>
+  <E3><FILE>C:\Users\moniq\Documents\Atmel Studio\7.0\Semaforo\semaforo\main.asm</FILE><LINE>127</LINE></E3>
+  <E4><FILE>C:\Users\moniq\Documents\Atmel Studio\7.0\Semaforo\semaforo\main.asm</FILE><LINE>137</LINE></E4>
+  <E5><FILE>C:\Users\moniq\Documents\Atmel Studio\7.0\Semaforo\semaforo\main.asm</FILE><LINE>158</LINE></E5>
+  <E6><FILE>C:\Users\moniq\Documents\Atmel Studio\7.0\Semaforo\semaforo\main.asm</FILE><LINE>168</LINE></E6>
+  <E7><FILE>C:\Users\moniq\Documents\Atmel Studio\7.0\Semaforo\semaforo\main.asm</FILE><LINE>178</LINE></E7>
+  <delay10ms><FILE>C:\Users\moniq\Documents\Atmel Studio\7.0\Semaforo\semaforo\main.asm</FILE><LINE>190</LINE></delay10ms>
+ </LABELS>
+</ASSEMBLER_INFO>
