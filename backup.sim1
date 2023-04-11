@@ -1,0 +1,119 @@
+<circuit version="1.0.0-SR0" rev="1320" stepSize="1000000" stepsPS="1000000" NLsteps="100000" reaStep="1000000" animate="0" >
+
+<item itemtype="ResistorDip" CircId="ResistorDip-1" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="676,516" rotation="0" hflip="1" vflip="1" label="ResistorDip-1" idLabPos="-24,-40" labelrot="0" valLabPos="5,-26" valLabRot="90" Resistance="10 Ω" Size="8 _Resist." />
+
+<item itemtype="Seven Segment" CircId="Seven Segment-2" mainComp="false" Show_id="false" Show_Val="false" Pos="764,516" rotation="0" hflip="1" vflip="1" label="Seven Segment-2" idLabPos="20,-44" labelrot="0" valLabPos="-16,20" valLabRot="0" NumDisplays="1 _7seg" Color="Yellow" Vertical_Pins="false" CommonCathode="true" Threshold="2.4 V" MaxCurrent="0.02 A" Resistance="1 Ω" />
+
+<item itemtype="Seven Segment" CircId="Seven Segment-3" mainComp="false" Show_id="false" Show_Val="false" Pos="856,516" rotation="0" hflip="1" vflip="1" label="Seven Segment-3" idLabPos="20,-44" labelrot="0" valLabPos="-16,20" valLabRot="0" NumDisplays="1 _7seg" Color="Green" Vertical_Pins="false" CommonCathode="true" Threshold="2.4 V" MaxCurrent="0.02 A" Resistance="1 Ω" />
+
+<item itemtype="BJT" CircId="BJT-33" mainComp="false" Show_id="false" Show_Val="false" Pos="764,576" rotation="0" hflip="1" vflip="1" label="BJT-33" idLabPos="18,0" labelrot="0" valLabPos="-16,20" valLabRot="0" PNP="false" Gain="100" Vcrit="0.670736 V" />
+
+<item itemtype="BJT" CircId="BJT-34" mainComp="false" Show_id="false" Show_Val="false" Pos="856,640" rotation="0" hflip="1" vflip="1" label="BJT-34" idLabPos="18,0" labelrot="0" valLabPos="-16,20" valLabRot="0" PNP="false" Gain="100" Vcrit="0.670736 V" />
+
+<item itemtype="Ground" CircId="Ground-35" mainComp="false" Show_id="false" Show_Val="false" Pos="772,620" rotation="0" hflip="1" vflip="1" label="Ground-35" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Ground" CircId="Ground-36" mainComp="false" Show_id="false" Show_Val="false" Pos="864,684" rotation="0" hflip="1" vflip="1" label="Ground-36" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Resistor" CircId="Resistor-42" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="712,576" rotation="0" hflip="1" vflip="1" label="Resistor-42" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="100 Ω" />
+
+<item itemtype="Resistor" CircId="Resistor-43" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="804,640" rotation="0" hflip="1" vflip="1" label="Resistor-43" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="100 Ω" />
+
+<item itemtype="MCU" CircId="mega328-94" mainComp="false" ShowProp="Frequency" Show_id="true" Show_Val="true" Pos="512,612" rotation="-180" hflip="1" vflip="1" label="mega328-94" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" Frequency="16 MHz" Program="../../../OneDrive/Documentos/Atmel Studio/7.0/AssemblerApplication7/AssemblerApplication7/Debug/AssemblerApplication7.hex" Auto_Load="true" Rst_enabled="false" Ext_Osc="false" Wdt_enabled="false" />
+
+<item itemtype="Node" CircId="Node-11" mainComp="false" Pos="740,540" />
+
+<item itemtype="Node" CircId="Node-14" mainComp="false" Pos="740,532" />
+
+<item itemtype="Node" CircId="Node-17" mainComp="false" Pos="740,524" />
+
+<item itemtype="Node" CircId="Node-21" mainComp="false" Pos="740,516" />
+
+<item itemtype="Node" CircId="Node-24" mainComp="false" Pos="740,508" />
+
+<item itemtype="Node" CircId="Node-27" mainComp="false" Pos="740,500" />
+
+<item itemtype="Node" CircId="Node-30" mainComp="false" Pos="740,492" />
+
+<item itemtype="Node" CircId="Node-165" mainComp="false" Pos="716,540" />
+
+<item itemtype="Node" CircId="Node-168" mainComp="false" Pos="648,540" />
+
+<item itemtype="Connector" uid="connector-169" startpinid="ResistorDip-1-resistor0-ePin1" endpinid="Node-30-0" pointList="692,492,740,492" />
+
+<item itemtype="Connector" uid="connector-170" startpinid="Seven Segment-2-pin_b" endpinid="Node-27-0" pointList="740,500,740,500" />
+
+<item itemtype="Connector" uid="connector-171" startpinid="ResistorDip-1-resistor2-ePin5" endpinid="Node-24-0" pointList="692,508,740,508" />
+
+<item itemtype="Connector" uid="connector-172" startpinid="Seven Segment-2-pin_d" endpinid="Node-21-0" pointList="740,516,740,516" />
+
+<item itemtype="Connector" uid="connector-173" startpinid="ResistorDip-1-resistor4-ePin9" endpinid="Node-17-0" pointList="692,524,740,524" />
+
+<item itemtype="Connector" uid="connector-174" startpinid="Seven Segment-2-pin_f" endpinid="Node-14-0" pointList="740,532,740,532" />
+
+<item itemtype="Connector" uid="connector-175" startpinid="ResistorDip-1-resistor6-ePin13" endpinid="Node-165-0" pointList="692,540,716,540" />
+
+<item itemtype="Connector" uid="connector-176" startpinid="Node-11-2" endpinid="Seven Segment-2-pin_g" pointList="740,540,740,540" />
+
+<item itemtype="Connector" uid="connector-177" startpinid="Node-11-1" endpinid="Seven Segment-3-pin_g" pointList="740,540,832,540" />
+
+<item itemtype="Connector" uid="connector-178" startpinid="Node-14-2" endpinid="ResistorDip-1-resistor5-ePin11" pointList="740,532,692,532" />
+
+<item itemtype="Connector" uid="connector-179" startpinid="Node-14-1" endpinid="Seven Segment-3-pin_f" pointList="740,532,832,532" />
+
+<item itemtype="Connector" uid="connector-180" startpinid="Node-17-2" endpinid="Seven Segment-2-pin_e" pointList="740,524,740,524" />
+
+<item itemtype="Connector" uid="connector-181" startpinid="Node-17-1" endpinid="Seven Segment-3-pin_e" pointList="740,524,832,524" />
+
+<item itemtype="Connector" uid="connector-182" startpinid="Node-21-1" endpinid="Seven Segment-3-pin_d" pointList="740,516,832,516" />
+
+<item itemtype="Connector" uid="connector-183" startpinid="Node-24-2" endpinid="Seven Segment-2-pin_c" pointList="740,508,740,508" />
+
+<item itemtype="Connector" uid="connector-184" startpinid="Node-24-1" endpinid="Seven Segment-3-pin_c" pointList="740,508,832,508" />
+
+<item itemtype="Connector" uid="connector-185" startpinid="Node-27-2" endpinid="ResistorDip-1-resistor1-ePin3" pointList="740,500,692,500" />
+
+<item itemtype="Connector" uid="connector-186" startpinid="Node-27-1" endpinid="Seven Segment-3-pin_b" pointList="740,500,832,500" />
+
+<item itemtype="Connector" uid="connector-187" startpinid="Node-30-2" endpinid="Seven Segment-2-pin_a" pointList="740,492,740,492" />
+
+<item itemtype="Connector" uid="connector-188" startpinid="Node-30-1" endpinid="Seven Segment-3-pin_a" pointList="740,492,832,492" />
+
+<item itemtype="Connector" uid="connector-189" startpinid="Resistor-43-rPin" endpinid="BJT-34-base" pointList="820,640,840,640" />
+
+<item itemtype="Connector" uid="connector-190" startpinid="Resistor-42-rPin" endpinid="BJT-33-base" pointList="728,576,748,576" />
+
+<item itemtype="Connector" uid="connector-191" startpinid="Node-21-2" endpinid="ResistorDip-1-resistor3-ePin7" pointList="740,516,692,516" />
+
+<item itemtype="Connector" uid="connector-192" startpinid="mega328-94-PORTD1" endpinid="ResistorDip-1-resistor0-ePin0" pointList="520,588,548,588,548,492,660,492" />
+
+<item itemtype="Connector" uid="connector-193" startpinid="ResistorDip-1-resistor1-ePin2" endpinid="mega328-94-PORTD2" pointList="660,500,556,500,556,580,520,580" />
+
+<item itemtype="Connector" uid="connector-194" startpinid="mega328-94-PORTD3" endpinid="ResistorDip-1-resistor2-ePin4" pointList="520,572,564,572,564,508,660,508" />
+
+<item itemtype="Connector" uid="connector-195" startpinid="ResistorDip-1-resistor3-ePin6" endpinid="mega328-94-PORTD4" pointList="660,516,572,516,572,564,520,564" />
+
+<item itemtype="Connector" uid="connector-196" startpinid="ResistorDip-1-resistor4-ePin8" endpinid="mega328-94-PORTD5" pointList="660,524,520,524" />
+
+<item itemtype="Connector" uid="connector-197" startpinid="Resistor-42-lPin" endpinid="mega328-94-PORTB1" pointList="696,576,572,576,572,648,460,648,460,500,472,500" />
+
+<item itemtype="Connector" uid="connector-198" startpinid="mega328-94-PORTB0" endpinid="Resistor-43-lPin" pointList="520,500,544,500,544,640,788,640" />
+
+<item itemtype="Connector" uid="connector-199" startpinid="ResistorDip-1-resistor6-ePin12" endpinid="Node-168-0" pointList="660,540,648,540" />
+
+<item itemtype="Connector" uid="connector-200" startpinid="BJT-33-collector" endpinid="Seven Segment-2-pin_commona" pointList="772,560,772,548" />
+
+<item itemtype="Connector" uid="connector-201" startpinid="mega328-94-PORTD6" endpinid="ResistorDip-1-resistor5-ePin10" pointList="520,516,532,516,532,532,660,532" />
+
+<item itemtype="Connector" uid="connector-202" startpinid="Ground-35-Gnd" endpinid="BJT-33-emiter" pointList="772,604,772,592" />
+
+<item itemtype="Connector" uid="connector-203" startpinid="Node-165-2" endpinid="Node-11-0" pointList="716,540,740,540" />
+
+<item itemtype="Connector" uid="connector-204" startpinid="Node-165-1" endpinid="Node-168-1" pointList="716,540,648,540" />
+
+<item itemtype="Connector" uid="connector-205" startpinid="Node-168-2" endpinid="mega328-94-PORTD7" pointList="648,540,540,540,540,508,520,508" />
+
+<item itemtype="Connector" uid="connector-206" startpinid="Seven Segment-3-pin_commona" endpinid="BJT-34-collector" pointList="864,548,864,624" />
+
+<item itemtype="Connector" uid="connector-207" startpinid="Ground-36-Gnd" endpinid="BJT-34-emiter" pointList="864,668,864,656" />
+
+</circuit>
