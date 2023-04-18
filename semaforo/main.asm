@@ -1,4 +1,3 @@
-
 #define CLOCK 16.0e6 ;clock speeddefine CLOCK 16.0e6 ;clock speed
 #define DELAY 1 ;seconds
 
@@ -6,8 +5,10 @@
 .def leds = r17 ;current LED value
 .def cont = r18 ;Conta os segundo do time 
 .def time = r19
-.def D1 = r25   ; Digito 1 do Display 
-.def D2 = r24   ; Digito 2 do Display 
+.def D01 = R25   ; Unidade do Display 
+.def D10 = R24   ; Dezena do Display 
+.def uni = R20
+.def dez = R21
 .cseg
 
 .org 0
@@ -15,27 +16,38 @@ jmp reset
 .org OC1Aaddr
 jmp Time_Interrupt
 
+digitos: .db 222, 254, 14, 250, 218, 204, 158, 182, 12, 126 ;230 é o 204
 
 Time_Interrupt:
 	push r16
 	in r16, SREG
 	push r16
-	
+
 	inc cont ; Contador de 1 segundo 
 
-	; Contador do Display
-	subi D2,1 
-	tst D2      ; Verificar se D2 == 0
-	brne pc + 3 ; Se D2 == 0, subtrai 1 de D1, caso não continua a interrupcção   
-	subi D1,1
-	ldi D2, 9
-	
-	
-	pop r16
-	out SREG, r16
-	pop r16
-	reti
+	unidades:
+		cpi uni, 0x39
+		brge dezenas
 
+		inc uni
+		ldi ZL, 0
+		add ZL, uni
+		lpm D01, Z
+
+		pop r16
+		out SREG, r16
+		pop r16
+		reti
+
+	dezenas:
+		ldi uni, 0x2F
+		inc dez
+		ldi ZL, 0
+		add ZL, dez
+		lpm D10, Z
+
+		rjmp unidades
+	
 reset:
 	LDI cont, 0
 	;Incializando Pilha
@@ -45,9 +57,11 @@ reset:
 	out SPH, temp
 
 	;Configurnado Portas B e D para os LEDS como Sa�da  e Porta C para o Display
-	ldi temp, $FF
+	ldi temp, 0xFF
 	out DDRB, temp
+	ldi temp, 0x3f
 	out DDRD, temp
+	ldi temp, 0xfe
 	out DDRC, temp
 	
 	.equ PRESCALE = 0b100 ;/256 prescale
@@ -80,122 +94,169 @@ reset:
 	sts TIMSK1, r16
 
 	sei
-	LOOP: 
-		CALL E1
-		CALL E2
-		CALL E3
-		ldi D1, 5
-		ldi D2, 2
-		CALL E4
-		CALL E5
-		CALL E6
-		CALL E7
-		ldi time, 127
-		cp cont, time
-		brne pc - 1
-		RJMP LOOP
+	; LEDS: RYG
+	; S1:		PC3, PC2
+	; S2:		PC1, PC0
+	; S3 E S4:	PB3, PB2
+	; S5:		PB5, PB4
+	;	 00 = Indevido		
+	;    01 = R    
+	;	 10 = Y
+	;    11 = G
+	;Display: 
+	; Unidades:						Dezenas: 
+	;    ON/OFF: PB0				ON/OFF: PB1
+	;    NUMERO: PORTD 1~7			NUMERO: PORTD 1~7
+	E1: 
+		LDI cont, 0
+		; ESTADO  1
+		; S1 = G // S2 = G // S3, S4, S5 = R
+		ldi uni, 0x39
+		ldi ZL, 0
+		add ZL, uni
+		lpm D01, Z
 
+		ldi dez, 0x31
+		ldi ZL, 0
+		add ZL, dez
+		lpm D10, Z
 
- 
-; LEDS: RYG
-; S1:         S2:				S5:				S3 E S4:			P1 E P2: 
-;    R = PB2			R = PB5			R = PD0			R = PD3				G = PD4      
-;	 Y = PB1			Y = PB4			Y = PB7			Y = PD2
-;    G = PB0			G = PB3			G = PB6			G = PD1
-;Display: 
-; D1:						D1: 
-;    ON/OFF: PD6				ON/OFF: PD5
-;    NUMERO: PORTA C			NUMERO: PORTA C
-E1: 
-	LDI cont, 0
-	; ESTADO  1
-	ldi leds, 0b00001001
-	out PORTB, leds
-	ldi leds, 0b00001001
-	out PORTD, leds
-	RETI
-E2: 
-	ldi time, 25
-	cp cont,time 
-	brne E2
-	; ESTADO  2
-	ldi leds, 0b00001010
-	out PORTB, leds
-	ldi leds, 0b00001001
-	out PORTD, leds
-	RETI
-E3: 
-	ldi time, 29
-	cp cont,time 
-	brne E3
-	; ESTADO  3
-	ldi leds, 0b00001100
-	out PORTB, leds
-	ldi leds, 0b00000011
-	out PORTD, leds
-	RETI
-E4: ;Display
-	ldi leds, 0b00100011 ;  Acende os leds como no estado 3, é configura acende o Display D2
-	out PORTD, leds
-	out PORTC, D2
-	call delay10ms
+		ldi leds, 0b010100
+		out PORTB, leds
+		ldi leds, 0b001111
+		out PORTC, leds
+		disp:
+			ldi time, 25
+			cp cont, time 
+			brge E2
+			call displays
+			rjmp disp
+	E2: 
+		; ESTADO  2
+		; S1 = Y // S2 = G // S3, S4, S5 = R
+		ldi leds, 0b010100
+		out PORTB, leds
+		ldi leds, 0b001011
+		out PORTC, leds
+		disp2:
+			ldi time, 29
+			cp cont, time 
+			brge E3
+			call displays
+			rjmp disp2
+	E3: 
+		; ESTADO  3
+		; S1 = R // S2 = G // S3, S4 = G // S5 = R
+		ldi leds, 0b011100
+		out PORTB, leds
+		ldi leds, 0b000111
+		out PORTC, leds
+		disp3:
+			ldi time, 81
+			cp cont, time 
+			brge E4
+			call displays
+			rjmp disp3
+	E4: 
+		ldi uni, 0x36
+		ldi ZL, 0
+		add ZL, uni
+		lpm D01, Z
 
-	ldi temp, 0b01000011 ;  Acende os leds como no estado 3, é configura acende o Display D1
-	out PORTD, temp
-	out PORTC, D1
-	call delay10ms
+		ldi dez, 0x39
+		ldi ZL, 0
+		add ZL, dez
+		lpm D10, Z
 
-	ldi time, 81
-	cp cont,time 
-	brne E4
+		; ESTADO  4
+		; S1 = R // S2 = Y // S3, S4 = Y // S5 = R
+		ldi leds, 0b011000
+		out PORTB, leds
+		ldi leds, 0b000110
+		out PORTC, leds
+		disp4:
+			ldi time, 85
+			cp cont, time 
+			brge E5
+			call displays
+			rjmp disp4
+	E5: 
+		ldi uni, 0x37
+		ldi ZL, 0
+		add ZL, uni
+		lpm D01, Z
 
-	; ESTADO  4
-	ldi leds, 0b00010100
-	out PORTB, leds
-	ldi leds, 0b00000101
-	out PORTD, leds
-	RETI
-E5: 
-	ldi time, 85
-	cp cont,time 
-	brne E5
-	; ESTADO  5
-	ldi leds, 0b01100100
-	out PORTB, leds
-	ldi leds, 0b00001000
-	out PORTD, leds
-	RETI
-E6: 
-	ldi time, 110
-	cp cont,time 
-	brne E6
-	; ESTADO  6
-	ldi leds, 0b10100100
-	out PORTB, leds
-	ldi leds, 0b00001000
-	out PORTD, leds
-	RETI
-E7: 
-	ldi time, 114
-	cp cont,time 
-	brne E7
-	; ESTADO  7
-	ldi leds, 0b00100100
-	out PORTB, leds
-	ldi leds, 0b00011001
-	out PORTD, leds
-	RETI
-
-
-delay10ms:
-	.equ ClockMHz = 16;16MHz
-	.equ DelayMs = 10; 20ms
-	ldi r22, byte3 (ClockMHz * 1000 * DelayMs / 5)
-	ldi r21,high (ClockMHz*1000 * DelayMs / 5)
-	ldi r20, low(ClockMHz * 1000 * DelayMs / 5)
+		ldi dez, 0x35
+		ldi ZL, 0
+		add ZL, dez
+		lpm D10, Z
 	
-	subi r20,1
-	sbci r21,0
-	sbci r22,0
+		; ESTADO  5
+		; S1 = R // S2 = R // S3, S4 = R // S5 = G
+		ldi leds, 0b110100
+		out PORTB, leds
+		ldi leds, 0b000101
+		out PORTC, leds
+		disp5:
+			ldi time, 110
+			cp cont, time 
+			brge E6
+			call displays
+			rjmp disp5
+	E6: 
+		; ESTADO  6
+		; S1 = R // S2 = R // S3, S4 = R // S5 = Y
+		ldi leds, 0b100100
+		out PORTB, leds
+		ldi leds, 0b000101
+		out PORTC, leds
+		disp6:
+			ldi time, 114
+			cp cont, time 
+			brge E7
+			call displays
+			rjmp disp6
+	E7: 
+		; ESTADO  7
+		; S1 = R // S2 = R // S3, S4 = R // S5 = R
+		ldi leds, 0b010100
+		out PORTB, leds
+		ldi leds, 0b000101
+		out PORTC, leds
+		disp7:
+			ldi time, 127
+			cp cont, time 
+			brge chamar
+			call displays
+			rjmp disp7
+
+	chamar:
+		reti
+
+	displays:
+		in temp, PORTB
+		andi temp, 0b111100
+		ori temp, 0b01
+		out PORTB, temp
+		out PORTD, D01
+		call delay1ms
+
+		andi temp, 0b111100
+		ori temp, 0b10
+		out PORTB, temp
+		out PORTD, D10
+		call delay1ms
+		reti
+
+delay1ms:
+	.equ ClockMHz = 16;16MHz
+	.equ DelayMs = 2; 20ms
+	ldi r29, byte3 (ClockMHz * 1000 * DelayMs / 5)
+	ldi r28, high (ClockMHz * 1000 * DelayMs / 5)
+	ldi r27, low(ClockMHz * 1000 * DelayMs / 5)
+	
+	subi r27,1
+	sbci r28,0
+	sbci r29,0
 	brcc pc-3
 	RET
