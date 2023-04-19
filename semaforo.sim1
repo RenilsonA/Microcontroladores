@@ -82,10 +82,6 @@
 
 <item itemtype="Tunnel" CircId="Tunnel-1056" mainComp="false" Show_id="false" Show_Val="false" Pos="-412,-260" rotation="0" hflip="1" vflip="1" label="Tunnel-1056" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Name="D5" />
 
-<item itemtype="Tunnel" CircId="Tunnel-1057" mainComp="false" Show_id="false" Show_Val="false" Pos="-556,-160" rotation="90" hflip="1" vflip="-1" label="Tunnel-1057" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Name="D6" />
-
-<item itemtype="Tunnel" CircId="Tunnel-1058" mainComp="false" Show_id="false" Show_Val="false" Pos="-568,-160" rotation="90" hflip="1" vflip="-1" label="Tunnel-1058" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Name="D7" />
-
 <item itemtype="Tunnel" CircId="Tunnel-1061" mainComp="false" Show_id="false" Show_Val="false" Pos="-364,-292" rotation="0" hflip="-1" vflip="1" label="Tunnel-1061" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Name="L1" />
 
 <item itemtype="Tunnel" CircId="Tunnel-1062" mainComp="false" Show_id="false" Show_Val="false" Pos="-364,-284" rotation="0" hflip="-1" vflip="1" label="Tunnel-1062" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Name="L2" />
@@ -160,8 +156,6 @@
 
 <item itemtype="Tunnel" CircId="Tunnel-1140" mainComp="false" Show_id="false" Show_Val="false" Pos="208,-264" rotation="0" hflip="1" vflip="1" label="Tunnel-1140" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Name="GL2A" />
 
-<item itemtype="Tunnel" CircId="Tunnel-1281" mainComp="false" Show_id="false" Show_Val="false" Pos="80,-380" rotation="-360" hflip="1" vflip="1" label="Tunnel-1281" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" />
-
 <item itemtype="Rail" CircId="Rail-1284" mainComp="false" ShowProp="Voltage" Show_id="false" Show_Val="true" Pos="320,-412" rotation="0" hflip="-1" vflip="1" label="Rail-1284" idLabPos="-16,-24" labelrot="0" valLabPos="6,5" valLabRot="0" Voltage="5 V" />
 
 <item itemtype="Led" CircId="Led-1285" mainComp="false" Show_id="false" Show_Val="false" Pos="160,-412" rotation="-180" hflip="1" vflip="1" label="Led-1285" idLabPos="-16,-24" labelrot="0" valLabPos="0,0" valLabRot="0" Color="Red" Grounded="false" Threshold="2.4 V" MaxCurrent="0.03 A" Resistance="0.6 Ω" />
@@ -171,8 +165,6 @@
 <item itemtype="Led" CircId="Led-1287" mainComp="false" Show_id="false" Show_Val="false" Pos="160,-352" rotation="-180" hflip="1" vflip="1" label="Led-1287" idLabPos="-16,-24" labelrot="0" valLabPos="0,0" valLabRot="0" Color="Yellow" Grounded="false" Threshold="2.4 V" MaxCurrent="0.03 A" Resistance="0.6 Ω" />
 
 <item itemtype="Resistor" CircId="Resistor-1288" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="232,-332" rotation="90" hflip="1" vflip="1" label="Resistor-1288" idLabPos="-12,-20" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="10 kΩ" />
-
-<item itemtype="Tunnel" CircId="Tunnel-1289" mainComp="false" Show_id="false" Show_Val="false" Pos="80,-352" rotation="-360" hflip="1" vflip="1" label="Tunnel-1289" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" />
 
 <item itemtype="BJT" CircId="BJT-1290" mainComp="false" Show_id="false" Show_Val="false" Pos="232,-372" rotation="90" hflip="-1" vflip="-1" label="BJT-1290" idLabPos="18,0" labelrot="0" valLabPos="-16,20" valLabRot="0" PNP="false" Gain="100" Vcrit="0.670736 V" />
 
@@ -330,23 +322,13 @@
 
 <item itemtype="Led" CircId="Led-1600" mainComp="false" Show_id="false" Show_Val="false" Pos="-24,-256" rotation="-180" hflip="1" vflip="1" label="Led-1600" idLabPos="-16,-24" labelrot="0" valLabPos="0,0" valLabRot="0" Color="Yellow" Grounded="false" Threshold="2.4 V" MaxCurrent="0.03 A" Resistance="0.6 Ω" />
 
-<item itemtype="Resistor" CircId="Resistor-1772" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="-568,-184" rotation="90" hflip="1" vflip="1" label="Resistor-1772" idLabPos="-16,-24" labelrot="0" valLabPos="-13,2" valLabRot="0" Resistance="100 Ω" />
+<item itemtype="Tunnel" CircId="Tunnel-1777" mainComp="false" Show_id="false" Show_Val="false" Pos="-412,-252" rotation="0" hflip="1" vflip="1" label="Tunnel-1777" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Name="D6" />
 
-<item itemtype="Resistor" CircId="Resistor-1773" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="-556,-188" rotation="90" hflip="-1" vflip="1" label="Resistor-1773" idLabPos="-16,-24" labelrot="0" valLabPos="13,2" valLabRot="0" Resistance="10 kΩ" />
+<item itemtype="Tunnel" CircId="Tunnel-1778" mainComp="false" Show_id="false" Show_Val="false" Pos="-412,-244" rotation="0" hflip="1" vflip="1" label="Tunnel-1778" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Name="D7" />
 
-<item itemtype="BJT" CircId="BJT-1776" mainComp="false" Show_id="false" Show_Val="false" Pos="-532,-212" rotation="0" hflip="1" vflip="1" label="BJT-1776" idLabPos="18,0" labelrot="0" valLabPos="-16,20" valLabRot="0" PNP="false" Gain="10000" Vcrit="0.670736 V" />
+<item itemtype="Fixed Voltage" CircId="Fixed Voltage-2124" mainComp="false" Show_id="false" Show_Val="false" Pos="60,-380" rotation="0" hflip="1" vflip="1" label="Fixed Voltage-2124" idLabPos="-64,-24" labelrot="0" valLabPos="-16,8" valLabRot="0" Out="false" Voltage="5 V" />
 
-<item itemtype="Tunnel" CircId="Tunnel-1777" mainComp="false" Show_id="false" Show_Val="false" Pos="-412,-252" rotation="0" hflip="1" vflip="1" label="Tunnel-1777" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Name="D66" />
-
-<item itemtype="Tunnel" CircId="Tunnel-1778" mainComp="false" Show_id="false" Show_Val="false" Pos="-412,-244" rotation="0" hflip="1" vflip="1" label="Tunnel-1778" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Name="D55" />
-
-<item itemtype="Tunnel" CircId="Tunnel-1781" mainComp="false" Show_id="false" Show_Val="false" Pos="-524,-188" rotation="90" hflip="1" vflip="-1" label="Tunnel-1781" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Name="D66" />
-
-<item itemtype="Fixed Voltage" CircId="Fixed Voltage-1784" mainComp="false" Show_id="false" Show_Val="false" Pos="-560,-256" rotation="90" hflip="1" vflip="1" label="Fixed Voltage-1784" idLabPos="-64,-24" labelrot="0" valLabPos="-16,8" valLabRot="0" Out="true" Voltage="5 V" />
-
-<item itemtype="BJT" CircId="BJT-1786" mainComp="false" Show_id="false" Show_Val="false" Pos="-592,-212" rotation="0" hflip="-1" vflip="1" label="BJT-1786" idLabPos="18,0" labelrot="0" valLabPos="-16,20" valLabRot="0" PNP="false" Gain="10000" Vcrit="0.670736 V" />
-
-<item itemtype="Tunnel" CircId="Tunnel-1788" mainComp="false" Show_id="false" Show_Val="false" Pos="-600,-188" rotation="90" hflip="1" vflip="-1" label="Tunnel-1788" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Name="D55" />
+<item itemtype="Fixed Voltage" CircId="Fixed Voltage-2125" mainComp="false" Show_id="false" Show_Val="false" Pos="60,-352" rotation="0" hflip="1" vflip="1" label="Fixed Voltage-2125" idLabPos="-64,-24" labelrot="0" valLabPos="-16,8" valLabRot="0" Out="false" Voltage="5 V" />
 
 <item itemtype="Node" CircId="Node-682" mainComp="false" Pos="88,-204" />
 
@@ -355,10 +337,6 @@
 <item itemtype="Node" CircId="Node-1278" mainComp="false" Pos="212,-264" />
 
 <item itemtype="Node" CircId="Node-1280" mainComp="false" Pos="200,-412" />
-
-<item itemtype="Node" CircId="Node-1282" mainComp="false" Pos="88,-352" />
-
-<item itemtype="Node" CircId="Node-1283" mainComp="false" Pos="88,-380" />
 
 <item itemtype="Node" CircId="Node-1329" mainComp="false" Pos="212,-132" />
 
@@ -378,328 +356,312 @@
 
 <item itemtype="Node" CircId="Node-1423" mainComp="false" Pos="88,164" />
 
-<item itemtype="Node" CircId="Node-1791" mainComp="false" Pos="-560,-240" />
+<item itemtype="Node" CircId="Node-2127" mainComp="false" Pos="88,-352" />
 
-<item itemtype="Connector" uid="connector-1792" startpinid="Resistor-539-lPin" endpinid="BJT-529-base" pointList="232,-200,232,-208" />
+<item itemtype="Node" CircId="Node-2130" mainComp="false" Pos="88,-380" />
 
-<item itemtype="Connector" uid="connector-1793" startpinid="Ground-527-Gnd" endpinid="BJT-529-emiter" pointList="252,-232,248,-232" />
+<item itemtype="Connector" uid="connector-1957" startpinid="Resistor-539-lPin" endpinid="BJT-529-base" pointList="232,-200,232,-208" />
 
-<item itemtype="Connector" uid="connector-1794" startpinid="Resistor-539-rPin" endpinid="Node-682-0" pointList="232,-168,232,-160,88,-160,88,-204" />
+<item itemtype="Connector" uid="connector-1958" startpinid="Ground-527-Gnd" endpinid="BJT-529-emiter" pointList="252,-232,248,-232" />
 
-<item itemtype="Connector" uid="connector-1795" startpinid="Resistor-530-lPin" endpinid="Node-774-0" pointList="104,-232,88,-232" />
+<item itemtype="Connector" uid="connector-1959" startpinid="Resistor-539-rPin" endpinid="Node-682-0" pointList="232,-168,232,-160,88,-160,88,-204" />
 
-<item itemtype="Connector" uid="connector-1796" startpinid="Tunnel-647-pin" endpinid="mega328-1-PORTB5" pointList="-368,-136,-376,-136" />
+<item itemtype="Connector" uid="connector-1960" startpinid="Resistor-530-lPin" endpinid="Node-774-0" pointList="104,-232,88,-232" />
 
-<item itemtype="Connector" uid="connector-1797" startpinid="Tunnel-644-pin" endpinid="mega328-1-PORTB4" pointList="-368,-128,-376,-128" />
+<item itemtype="Connector" uid="connector-1961" startpinid="Tunnel-644-pin" endpinid="mega328-1-PORTB4" pointList="-368,-128,-376,-128" />
 
-<item itemtype="Connector" uid="connector-1798" startpinid="Tunnel-645-pin" endpinid="mega328-1-PORTB3" pointList="-368,-120,-376,-120" />
+<item itemtype="Connector" uid="connector-1962" startpinid="Tunnel-645-pin" endpinid="mega328-1-PORTB3" pointList="-368,-120,-376,-120" />
 
-<item itemtype="Connector" uid="connector-1799" startpinid="Tunnel-646-pin" endpinid="mega328-1-PORTB2" pointList="-368,-112,-376,-112" />
+<item itemtype="Connector" uid="connector-1963" startpinid="Tunnel-646-pin" endpinid="mega328-1-PORTB2" pointList="-368,-112,-376,-112" />
 
-<item itemtype="Connector" uid="connector-1800" startpinid="Tunnel-653-pin" endpinid="mega328-1-PORTC0" pointList="-368,-168,-376,-168" />
+<item itemtype="Connector" uid="connector-1964" startpinid="Tunnel-653-pin" endpinid="mega328-1-PORTC0" pointList="-368,-168,-376,-168" />
 
-<item itemtype="Connector" uid="connector-1801" startpinid="mega328-1-PORTC1" endpinid="Tunnel-652-pin" pointList="-376,-176,-368,-176" />
+<item itemtype="Connector" uid="connector-1965" startpinid="mega328-1-PORTC1" endpinid="Tunnel-652-pin" pointList="-376,-176,-368,-176" />
 
-<item itemtype="Connector" uid="connector-1802" startpinid="Tunnel-655-pin" endpinid="mega328-1-PORTC2" pointList="-368,-184,-376,-184" />
+<item itemtype="Connector" uid="connector-1966" startpinid="Tunnel-655-pin" endpinid="mega328-1-PORTC2" pointList="-368,-184,-376,-184" />
 
-<item itemtype="Connector" uid="connector-1803" startpinid="mega328-1-PORTC3" endpinid="Tunnel-654-pin" pointList="-376,-192,-368,-192" />
+<item itemtype="Connector" uid="connector-1967" startpinid="mega328-1-PORTC3" endpinid="Tunnel-654-pin" pointList="-376,-192,-368,-192" />
 
-<item itemtype="Connector" uid="connector-1804" startpinid="Tunnel-679-pin" endpinid="Node-682-1" pointList="80,-204,88,-204" />
+<item itemtype="Connector" uid="connector-1968" startpinid="Tunnel-679-pin" endpinid="Node-682-1" pointList="80,-204,88,-204" />
 
-<item itemtype="Connector" uid="connector-1805" startpinid="Node-682-2" endpinid="Resistor-538-lPin" pointList="88,-204,104,-204" />
+<item itemtype="Connector" uid="connector-1969" startpinid="Node-682-2" endpinid="Resistor-538-lPin" pointList="88,-204,104,-204" />
 
-<item itemtype="Connector" uid="connector-1806" startpinid="Tunnel-677-pin" endpinid="Node-774-1" pointList="80,-232,88,-232" />
+<item itemtype="Connector" uid="connector-1970" startpinid="Tunnel-677-pin" endpinid="Node-774-1" pointList="80,-232,88,-232" />
 
-<item itemtype="Connector" uid="connector-1807" startpinid="Node-774-2" endpinid="Resistor-536-lPin" pointList="88,-232,88,-264,104,-264" />
+<item itemtype="Connector" uid="connector-1971" startpinid="Node-774-2" endpinid="Resistor-536-lPin" pointList="88,-232,88,-264,104,-264" />
 
-<item itemtype="Connector" uid="connector-1808" startpinid="Tunnel-953-pin" endpinid="mega328-1-PORTB1" pointList="-368,-104,-376,-104" />
+<item itemtype="Connector" uid="connector-1972" startpinid="Tunnel-953-pin" endpinid="mega328-1-PORTB1" pointList="-368,-104,-376,-104" />
 
-<item itemtype="Connector" uid="connector-1809" startpinid="Tunnel-952-pin" endpinid="mega328-1-PORTB0" pointList="-432,-104,-424,-104" />
+<item itemtype="Connector" uid="connector-1974" startpinid="mega328-1-PORTD7" endpinid="Tunnel-951-pin" pointList="-424,-112,-432,-112" />
 
-<item itemtype="Connector" uid="connector-1810" startpinid="mega328-1-PORTD7" endpinid="Tunnel-951-pin" pointList="-424,-112,-432,-112" />
+<item itemtype="Connector" uid="connector-1975" startpinid="Tunnel-878-pin" endpinid="mega328-1-PORTD6" pointList="-432,-120,-424,-120" />
 
-<item itemtype="Connector" uid="connector-1811" startpinid="Tunnel-878-pin" endpinid="mega328-1-PORTD6" pointList="-432,-120,-424,-120" />
+<item itemtype="Connector" uid="connector-1976" startpinid="mega328-1-PORTD5" endpinid="Tunnel-879-pin" pointList="-424,-128,-432,-128" />
 
-<item itemtype="Connector" uid="connector-1812" startpinid="mega328-1-PORTD5" endpinid="Tunnel-879-pin" pointList="-424,-128,-432,-128" />
+<item itemtype="Connector" uid="connector-1977" startpinid="Tunnel-880-pin" endpinid="mega328-1-PORTD4" pointList="-432,-168,-424,-168" />
 
-<item itemtype="Connector" uid="connector-1813" startpinid="Tunnel-880-pin" endpinid="mega328-1-PORTD4" pointList="-432,-168,-424,-168" />
+<item itemtype="Connector" uid="connector-1978" startpinid="mega328-1-PORTD3" endpinid="Tunnel-881-pin" pointList="-424,-176,-432,-176" />
 
-<item itemtype="Connector" uid="connector-1814" startpinid="mega328-1-PORTD3" endpinid="Tunnel-881-pin" pointList="-424,-176,-432,-176" />
+<item itemtype="Connector" uid="connector-1979" startpinid="Tunnel-882-pin" endpinid="mega328-1-PORTD2" pointList="-432,-184,-424,-184" />
 
-<item itemtype="Connector" uid="connector-1815" startpinid="Tunnel-882-pin" endpinid="mega328-1-PORTD2" pointList="-432,-184,-424,-184" />
+<item itemtype="Connector" uid="connector-1981" startpinid="BJT-1036-collector" endpinid="Seven Segment-1035-pin_commona" pointList="-132,-228,-132,-236" />
 
-<item itemtype="Connector" uid="connector-1816" startpinid="mega328-1-PORTD1" endpinid="Tunnel-877-pin" pointList="-424,-192,-432,-192" />
+<item itemtype="Connector" uid="connector-1982" startpinid="BJT-1038-collector" endpinid="Seven Segment-1034-pin_commona" pointList="-236,-228,-236,-236" />
 
-<item itemtype="Connector" uid="connector-1817" startpinid="BJT-1036-collector" endpinid="Seven Segment-1035-pin_commona" pointList="-132,-228,-132,-236" />
+<item itemtype="Connector" uid="connector-1983" startpinid="Resistor-1040-rPin" endpinid="BJT-1038-base" pointList="-268,-212,-260,-212" />
 
-<item itemtype="Connector" uid="connector-1818" startpinid="BJT-1038-collector" endpinid="Seven Segment-1034-pin_commona" pointList="-236,-228,-236,-236" />
+<item itemtype="Connector" uid="connector-1984" startpinid="Resistor-1042-rPin" endpinid="BJT-1036-base" pointList="-164,-212,-156,-212" />
 
-<item itemtype="Connector" uid="connector-1819" startpinid="Resistor-1040-rPin" endpinid="BJT-1038-base" pointList="-268,-212,-260,-212" />
+<item itemtype="Connector" uid="connector-1985" startpinid="Tunnel-1061-pin" endpinid="ResistorDip-1051-resistor0-ePin1" pointList="-364,-292,-372,-292" />
 
-<item itemtype="Connector" uid="connector-1820" startpinid="Resistor-1042-rPin" endpinid="BJT-1036-base" pointList="-164,-212,-156,-212" />
+<item itemtype="Connector" uid="connector-1986" startpinid="ResistorDip-1051-resistor1-ePin3" endpinid="Tunnel-1062-pin" pointList="-372,-284,-364,-284" />
 
-<item itemtype="Connector" uid="connector-1821" startpinid="Tunnel-1061-pin" endpinid="ResistorDip-1051-resistor0-ePin1" pointList="-364,-292,-372,-292" />
+<item itemtype="Connector" uid="connector-1987" startpinid="Tunnel-1063-pin" endpinid="ResistorDip-1051-resistor2-ePin5" pointList="-364,-276,-372,-276" />
 
-<item itemtype="Connector" uid="connector-1822" startpinid="ResistorDip-1051-resistor1-ePin3" endpinid="Tunnel-1062-pin" pointList="-372,-284,-364,-284" />
+<item itemtype="Connector" uid="connector-1988" startpinid="ResistorDip-1051-resistor3-ePin7" endpinid="Tunnel-1064-pin" pointList="-372,-268,-364,-268" />
 
-<item itemtype="Connector" uid="connector-1823" startpinid="Tunnel-1063-pin" endpinid="ResistorDip-1051-resistor2-ePin5" pointList="-364,-276,-372,-276" />
+<item itemtype="Connector" uid="connector-1989" startpinid="Tunnel-1065-pin" endpinid="ResistorDip-1051-resistor4-ePin9" pointList="-364,-260,-372,-260" />
 
-<item itemtype="Connector" uid="connector-1824" startpinid="ResistorDip-1051-resistor3-ePin7" endpinid="Tunnel-1064-pin" pointList="-372,-268,-364,-268" />
+<item itemtype="Connector" uid="connector-1990" startpinid="ResistorDip-1051-resistor5-ePin11" endpinid="Tunnel-1067-pin" pointList="-372,-252,-364,-252" />
 
-<item itemtype="Connector" uid="connector-1825" startpinid="Tunnel-1065-pin" endpinid="ResistorDip-1051-resistor4-ePin9" pointList="-364,-260,-372,-260" />
+<item itemtype="Connector" uid="connector-1991" startpinid="Tunnel-1066-pin" endpinid="ResistorDip-1051-resistor6-ePin13" pointList="-364,-244,-372,-244" />
 
-<item itemtype="Connector" uid="connector-1826" startpinid="ResistorDip-1051-resistor5-ePin11" endpinid="Tunnel-1067-pin" pointList="-372,-252,-364,-252" />
+<item itemtype="Connector" uid="connector-1992" startpinid="Tunnel-1056-pin" endpinid="ResistorDip-1051-resistor4-ePin8" pointList="-412,-260,-404,-260" />
 
-<item itemtype="Connector" uid="connector-1827" startpinid="Tunnel-1066-pin" endpinid="ResistorDip-1051-resistor6-ePin13" pointList="-364,-244,-372,-244" />
+<item itemtype="Connector" uid="connector-1993" startpinid="ResistorDip-1051-resistor3-ePin6" endpinid="Tunnel-1055-pin" pointList="-404,-268,-412,-268" />
 
-<item itemtype="Connector" uid="connector-1828" startpinid="Tunnel-1056-pin" endpinid="ResistorDip-1051-resistor4-ePin8" pointList="-412,-260,-404,-260" />
+<item itemtype="Connector" uid="connector-1994" startpinid="Tunnel-1054-pin" endpinid="ResistorDip-1051-resistor2-ePin4" pointList="-412,-276,-404,-276" />
 
-<item itemtype="Connector" uid="connector-1829" startpinid="ResistorDip-1051-resistor3-ePin6" endpinid="Tunnel-1055-pin" pointList="-404,-268,-412,-268" />
+<item itemtype="Connector" uid="connector-1995" startpinid="ResistorDip-1051-resistor1-ePin2" endpinid="Tunnel-1053-pin" pointList="-404,-284,-412,-284" />
 
-<item itemtype="Connector" uid="connector-1830" startpinid="Tunnel-1054-pin" endpinid="ResistorDip-1051-resistor2-ePin4" pointList="-412,-276,-404,-276" />
+<item itemtype="Connector" uid="connector-1997" startpinid="Tunnel-1083-pin" endpinid="Seven Segment-1034-pin_g" pointList="-276,-244,-268,-244" />
 
-<item itemtype="Connector" uid="connector-1831" startpinid="ResistorDip-1051-resistor1-ePin2" endpinid="Tunnel-1053-pin" pointList="-404,-284,-412,-284" />
+<item itemtype="Connector" uid="connector-1998" startpinid="Seven Segment-1034-pin_f" endpinid="Tunnel-1085-pin" pointList="-268,-252,-276,-252" />
 
-<item itemtype="Connector" uid="connector-1832" startpinid="Tunnel-1052-pin" endpinid="ResistorDip-1051-resistor0-ePin0" pointList="-412,-292,-404,-292" />
+<item itemtype="Connector" uid="connector-1999" startpinid="Tunnel-1086-pin" endpinid="Seven Segment-1034-pin_e" pointList="-276,-260,-268,-260" />
 
-<item itemtype="Connector" uid="connector-1833" startpinid="Tunnel-1083-pin" endpinid="Seven Segment-1034-pin_g" pointList="-276,-244,-268,-244" />
+<item itemtype="Connector" uid="connector-2000" startpinid="Seven Segment-1034-pin_d" endpinid="Tunnel-1088-pin" pointList="-268,-268,-276,-268" />
 
-<item itemtype="Connector" uid="connector-1834" startpinid="Seven Segment-1034-pin_f" endpinid="Tunnel-1085-pin" pointList="-268,-252,-276,-252" />
+<item itemtype="Connector" uid="connector-2001" startpinid="Tunnel-1087-pin" endpinid="Seven Segment-1034-pin_c" pointList="-276,-276,-268,-276" />
 
-<item itemtype="Connector" uid="connector-1835" startpinid="Tunnel-1086-pin" endpinid="Seven Segment-1034-pin_e" pointList="-276,-260,-268,-260" />
+<item itemtype="Connector" uid="connector-2002" startpinid="Seven Segment-1034-pin_b" endpinid="Tunnel-1084-pin" pointList="-268,-284,-276,-284" />
 
-<item itemtype="Connector" uid="connector-1836" startpinid="Seven Segment-1034-pin_d" endpinid="Tunnel-1088-pin" pointList="-268,-268,-276,-268" />
+<item itemtype="Connector" uid="connector-2003" startpinid="Tunnel-1082-pin" endpinid="Seven Segment-1034-pin_a" pointList="-276,-292,-268,-292" />
 
-<item itemtype="Connector" uid="connector-1837" startpinid="Tunnel-1087-pin" endpinid="Seven Segment-1034-pin_c" pointList="-276,-276,-268,-276" />
+<item itemtype="Connector" uid="connector-2004" startpinid="Tunnel-1095-pin" endpinid="Seven Segment-1035-pin_a" pointList="-172,-292,-164,-292" />
 
-<item itemtype="Connector" uid="connector-1838" startpinid="Seven Segment-1034-pin_b" endpinid="Tunnel-1084-pin" pointList="-268,-284,-276,-284" />
+<item itemtype="Connector" uid="connector-2005" startpinid="Seven Segment-1035-pin_b" endpinid="Tunnel-1091-pin" pointList="-164,-284,-172,-284" />
 
-<item itemtype="Connector" uid="connector-1839" startpinid="Tunnel-1082-pin" endpinid="Seven Segment-1034-pin_a" pointList="-276,-292,-268,-292" />
+<item itemtype="Connector" uid="connector-2006" startpinid="Tunnel-1093-pin" endpinid="Seven Segment-1035-pin_c" pointList="-172,-276,-164,-276" />
 
-<item itemtype="Connector" uid="connector-1840" startpinid="Tunnel-1095-pin" endpinid="Seven Segment-1035-pin_a" pointList="-172,-292,-164,-292" />
+<item itemtype="Connector" uid="connector-2007" startpinid="Seven Segment-1035-pin_d" endpinid="Tunnel-1089-pin" pointList="-164,-268,-172,-268" />
 
-<item itemtype="Connector" uid="connector-1841" startpinid="Seven Segment-1035-pin_b" endpinid="Tunnel-1091-pin" pointList="-164,-284,-172,-284" />
+<item itemtype="Connector" uid="connector-2008" startpinid="Tunnel-1090-pin" endpinid="Seven Segment-1035-pin_e" pointList="-172,-260,-164,-260" />
 
-<item itemtype="Connector" uid="connector-1842" startpinid="Tunnel-1093-pin" endpinid="Seven Segment-1035-pin_c" pointList="-172,-276,-164,-276" />
+<item itemtype="Connector" uid="connector-2009" startpinid="Seven Segment-1035-pin_f" endpinid="Tunnel-1092-pin" pointList="-164,-252,-172,-252" />
 
-<item itemtype="Connector" uid="connector-1843" startpinid="Seven Segment-1035-pin_d" endpinid="Tunnel-1089-pin" pointList="-164,-268,-172,-268" />
+<item itemtype="Connector" uid="connector-2010" startpinid="Tunnel-1094-pin" endpinid="Seven Segment-1035-pin_g" pointList="-172,-244,-164,-244" />
 
-<item itemtype="Connector" uid="connector-1844" startpinid="Tunnel-1090-pin" endpinid="Seven Segment-1035-pin_e" pointList="-172,-260,-164,-260" />
+<item itemtype="Connector" uid="connector-2011" startpinid="Tunnel-1122-pin" endpinid="Led-1114-lPin" pointList="0,-236,-8,-236" />
 
-<item itemtype="Connector" uid="connector-1845" startpinid="Seven Segment-1035-pin_f" endpinid="Tunnel-1092-pin" pointList="-164,-252,-172,-252" />
+<item itemtype="Connector" uid="connector-2012" startpinid="Led-1115-lPin" endpinid="Tunnel-1120-pin" pointList="-8,-276,0,-276" />
 
-<item itemtype="Connector" uid="connector-1846" startpinid="Tunnel-1094-pin" endpinid="Seven Segment-1035-pin_g" pointList="-172,-244,-164,-244" />
+<item itemtype="Connector" uid="connector-2013" startpinid="Led-1115-rPin" endpinid="Tunnel-1119-pin" pointList="-40,-276,-48,-276" />
 
-<item itemtype="Connector" uid="connector-1847" startpinid="Tunnel-1122-pin" endpinid="Led-1114-lPin" pointList="0,-236,-8,-236" />
+<item itemtype="Connector" uid="connector-2014" startpinid="Tunnel-1117-pin" endpinid="Led-1114-rPin" pointList="-48,-236,-40,-236" />
 
-<item itemtype="Connector" uid="connector-1848" startpinid="Led-1115-lPin" endpinid="Tunnel-1120-pin" pointList="-8,-276,0,-276" />
+<item itemtype="Connector" uid="connector-2015" startpinid="Tunnel-1138-pin" endpinid="Resistor-536-rPin" pointList="140,-264,136,-264" />
 
-<item itemtype="Connector" uid="connector-1849" startpinid="Led-1115-rPin" endpinid="Tunnel-1119-pin" pointList="-40,-276,-48,-276" />
+<item itemtype="Connector" uid="connector-2016" startpinid="Tunnel-1133-pin" endpinid="Resistor-530-rPin" pointList="144,-232,136,-232" />
 
-<item itemtype="Connector" uid="connector-1850" startpinid="Tunnel-1117-pin" endpinid="Led-1114-rPin" pointList="-48,-236,-40,-236" />
+<item itemtype="Connector" uid="connector-2017" startpinid="Tunnel-1132-pin" endpinid="BJT-529-collector" pointList="208,-232,216,-232" />
 
-<item itemtype="Connector" uid="connector-1851" startpinid="Tunnel-1138-pin" endpinid="Resistor-536-rPin" pointList="140,-264,136,-264" />
+<item itemtype="Connector" uid="connector-2018" startpinid="Tunnel-1137-pin" endpinid="Resistor-538-rPin" pointList="144,-204,136,-204" />
 
-<item itemtype="Connector" uid="connector-1852" startpinid="Tunnel-1133-pin" endpinid="Resistor-530-rPin" pointList="144,-232,136,-232" />
+<item itemtype="Connector" uid="connector-2019" startpinid="Rail-528-outnod" endpinid="Node-1278-0" pointList="216,-264,212,-264" />
 
-<item itemtype="Connector" uid="connector-1853" startpinid="Tunnel-1132-pin" endpinid="BJT-529-collector" pointList="208,-232,216,-232" />
+<item itemtype="Connector" uid="connector-2020" startpinid="Node-1278-2" endpinid="Tunnel-1140-pin" pointList="212,-264,208,-264" />
 
-<item itemtype="Connector" uid="connector-1854" startpinid="Tunnel-1137-pin" endpinid="Resistor-538-rPin" pointList="144,-204,136,-204" />
+<item itemtype="Connector" uid="connector-2022" startpinid="Led-1293-lPin" endpinid="Resistor-1291-rPin" pointList="144,-380,136,-380" />
 
-<item itemtype="Connector" uid="connector-1855" startpinid="Rail-528-outnod" endpinid="Node-1278-0" pointList="216,-264,212,-264" />
+<item itemtype="Connector" uid="connector-2024" startpinid="Rail-1284-outnod" endpinid="Node-1280-0" pointList="304,-412,200,-412" />
 
-<item itemtype="Connector" uid="connector-1856" startpinid="Node-1278-2" endpinid="Tunnel-1140-pin" pointList="212,-264,208,-264" />
+<item itemtype="Connector" uid="connector-2025" startpinid="Led-1287-rPin" endpinid="Resistor-1292-rPin" pointList="144,-352,136,-352" />
 
-<item itemtype="Connector" uid="connector-1857" startpinid="Tunnel-1281-pin" endpinid="Node-1283-1" pointList="80,-380,88,-380" />
+<item itemtype="Connector" uid="connector-2027" startpinid="Ground-1286-Gnd" endpinid="BJT-1290-emiter" pointList="264,-380,248,-380" />
 
-<item itemtype="Connector" uid="connector-1858" startpinid="Led-1293-lPin" endpinid="Resistor-1291-rPin" pointList="144,-380,136,-380" />
+<item itemtype="Connector" uid="connector-2028" startpinid="Resistor-1288-lPin" endpinid="BJT-1290-base" pointList="232,-348,232,-356" />
 
-<item itemtype="Connector" uid="connector-1859" startpinid="Node-1280-2" endpinid="Led-1285-lPin" pointList="200,-412,176,-412" />
+<item itemtype="Connector" uid="connector-2030" startpinid="Led-1287-lPin" endpinid="Node-1280-1" pointList="176,-352,200,-352,200,-412" />
 
-<item itemtype="Connector" uid="connector-1860" startpinid="Rail-1284-outnod" endpinid="Node-1280-0" pointList="304,-412,200,-412" />
+<item itemtype="Connector" uid="connector-2031" startpinid="Resistor-1294-rPin" endpinid="Led-1285-rPin" pointList="136,-412,144,-412" />
 
-<item itemtype="Connector" uid="connector-1861" startpinid="Led-1287-rPin" endpinid="Resistor-1292-rPin" pointList="144,-352,136,-352" />
+<item itemtype="Connector" uid="connector-2032" startpinid="BJT-1290-collector" endpinid="Led-1293-rPin" pointList="216,-380,176,-380" />
 
-<item itemtype="Connector" uid="connector-1862" startpinid="Resistor-1291-lPin" endpinid="Node-1283-0" pointList="104,-380,88,-380" />
+<item itemtype="Connector" uid="connector-2036" startpinid="Tunnel-1317-pin" endpinid="Led-1315-lPin" pointList="0,-188,-8,-188" />
 
-<item itemtype="Connector" uid="connector-1863" startpinid="Ground-1286-Gnd" endpinid="BJT-1290-emiter" pointList="264,-380,248,-380" />
+<item itemtype="Connector" uid="connector-2037" startpinid="Tunnel-1316-pin" endpinid="Led-1313-rPin" pointList="-48,-168,-40,-168" />
 
-<item itemtype="Connector" uid="connector-1864" startpinid="Resistor-1288-lPin" endpinid="BJT-1290-base" pointList="232,-348,232,-356" />
+<item itemtype="Connector" uid="connector-2038" startpinid="Led-1310-rPin" endpinid="Tunnel-1318-pin" pointList="-40,-208,-48,-208" />
 
-<item itemtype="Connector" uid="connector-1865" startpinid="Resistor-1288-rPin" endpinid="Node-1282-0" pointList="232,-316,232,-308,88,-308,88,-352" />
+<item itemtype="Connector" uid="connector-2039" startpinid="Led-1310-lPin" endpinid="Tunnel-1314-pin" pointList="-8,-208,0,-208" />
 
-<item itemtype="Connector" uid="connector-1866" startpinid="Led-1287-lPin" endpinid="Node-1280-1" pointList="176,-352,200,-352,200,-412" />
+<item itemtype="Connector" uid="connector-2040" startpinid="Tunnel-1311-pin" endpinid="Led-1315-rPin" pointList="-48,-188,-40,-188" />
 
-<item itemtype="Connector" uid="connector-1867" startpinid="Resistor-1294-rPin" endpinid="Led-1285-rPin" pointList="136,-412,144,-412" />
+<item itemtype="Connector" uid="connector-2041" startpinid="Tunnel-1312-pin" endpinid="Led-1313-lPin" pointList="0,-168,-8,-168" />
 
-<item itemtype="Connector" uid="connector-1868" startpinid="BJT-1290-collector" endpinid="Led-1293-rPin" pointList="216,-380,176,-380" />
+<item itemtype="Connector" uid="connector-2042" startpinid="Tunnel-1333-pin" endpinid="Resistor-1330-rPin" pointList="140,-132,136,-132" />
 
-<item itemtype="Connector" uid="connector-1869" startpinid="Node-1282-2" endpinid="Resistor-1292-lPin" pointList="88,-352,104,-352" />
+<item itemtype="Connector" uid="connector-2043" startpinid="Resistor-1328-rPin" endpinid="Node-1331-0" pointList="232,-36,232,-28,88,-28,88,-72" />
 
-<item itemtype="Connector" uid="connector-1870" startpinid="Node-1283-2" endpinid="Resistor-1294-lPin" pointList="88,-380,88,-412,104,-412" />
+<item itemtype="Connector" uid="connector-2044" startpinid="Node-1329-2" endpinid="Tunnel-1332-pin" pointList="212,-132,208,-132" />
 
-<item itemtype="Connector" uid="connector-1871" startpinid="Tunnel-1289-pin" endpinid="Node-1282-1" pointList="80,-352,88,-352" />
+<item itemtype="Connector" uid="connector-2045" startpinid="Tunnel-1336-pin" endpinid="Node-1329-1" pointList="208,-144,212,-144,212,-132" />
 
-<item itemtype="Connector" uid="connector-1872" startpinid="Tunnel-1317-pin" endpinid="Led-1315-lPin" pointList="0,-188,-8,-188" />
+<item itemtype="Connector" uid="connector-2046" startpinid="Tunnel-1326-pin" endpinid="BJT-1340-collector" pointList="208,-100,216,-100" />
 
-<item itemtype="Connector" uid="connector-1873" startpinid="Tunnel-1316-pin" endpinid="Led-1313-rPin" pointList="-48,-168,-40,-168" />
+<item itemtype="Connector" uid="connector-2047" startpinid="Node-1342-2" endpinid="Resistor-1330-lPin" pointList="88,-100,88,-132,104,-132" />
 
-<item itemtype="Connector" uid="connector-1874" startpinid="Led-1310-rPin" endpinid="Tunnel-1318-pin" pointList="-40,-208,-48,-208" />
+<item itemtype="Connector" uid="connector-2048" startpinid="Resistor-1328-lPin" endpinid="BJT-1340-base" pointList="232,-68,232,-76" />
 
-<item itemtype="Connector" uid="connector-1875" startpinid="Led-1310-lPin" endpinid="Tunnel-1314-pin" pointList="-8,-208,0,-208" />
+<item itemtype="Connector" uid="connector-2049" startpinid="Tunnel-1339-pin" endpinid="Resistor-1341-rPin" pointList="144,-100,136,-100" />
 
-<item itemtype="Connector" uid="connector-1876" startpinid="Tunnel-1311-pin" endpinid="Led-1315-rPin" pointList="-48,-188,-40,-188" />
+<item itemtype="Connector" uid="connector-2050" startpinid="Tunnel-1337-pin" endpinid="Resistor-1325-rPin" pointList="144,-72,136,-72" />
 
-<item itemtype="Connector" uid="connector-1877" startpinid="Tunnel-1312-pin" endpinid="Led-1313-lPin" pointList="0,-168,-8,-168" />
+<item itemtype="Connector" uid="connector-2051" startpinid="Tunnel-1335-pin" endpinid="Node-1342-1" pointList="80,-100,88,-100" />
 
-<item itemtype="Connector" uid="connector-1878" startpinid="Tunnel-1333-pin" endpinid="Resistor-1330-rPin" pointList="140,-132,136,-132" />
+<item itemtype="Connector" uid="connector-2052" startpinid="Ground-1334-Gnd" endpinid="BJT-1340-emiter" pointList="252,-100,248,-100" />
 
-<item itemtype="Connector" uid="connector-1879" startpinid="Resistor-1328-rPin" endpinid="Node-1331-0" pointList="232,-36,232,-28,88,-28,88,-72" />
+<item itemtype="Connector" uid="connector-2053" startpinid="Node-1331-2" endpinid="Resistor-1325-lPin" pointList="88,-72,104,-72" />
 
-<item itemtype="Connector" uid="connector-1880" startpinid="Node-1329-2" endpinid="Tunnel-1332-pin" pointList="212,-132,208,-132" />
+<item itemtype="Connector" uid="connector-2054" startpinid="Tunnel-1338-pin" endpinid="Node-1331-1" pointList="80,-72,88,-72" />
 
-<item itemtype="Connector" uid="connector-1881" startpinid="Tunnel-1336-pin" endpinid="Node-1329-1" pointList="208,-144,212,-144,212,-132" />
+<item itemtype="Connector" uid="connector-2055" startpinid="Resistor-1341-lPin" endpinid="Node-1342-0" pointList="104,-100,88,-100" />
 
-<item itemtype="Connector" uid="connector-1882" startpinid="Tunnel-1326-pin" endpinid="BJT-1340-collector" pointList="208,-100,216,-100" />
+<item itemtype="Connector" uid="connector-2056" startpinid="Rail-1327-outnod" endpinid="Node-1329-0" pointList="216,-132,212,-132" />
 
-<item itemtype="Connector" uid="connector-1883" startpinid="Node-1342-2" endpinid="Resistor-1330-lPin" pointList="88,-100,88,-132,104,-132" />
+<item itemtype="Connector" uid="connector-2057" startpinid="Tunnel-1361-pin" endpinid="Led-1363-lPin" pointList="-240,-120,-248,-120" />
 
-<item itemtype="Connector" uid="connector-1884" startpinid="Resistor-1328-lPin" endpinid="BJT-1340-base" pointList="232,-68,232,-76" />
+<item itemtype="Connector" uid="connector-2058" startpinid="Tunnel-1358-pin" endpinid="Led-1363-rPin" pointList="-288,-120,-280,-120" />
 
-<item itemtype="Connector" uid="connector-1885" startpinid="Tunnel-1339-pin" endpinid="Resistor-1341-rPin" pointList="144,-100,136,-100" />
+<item itemtype="Connector" uid="connector-2059" startpinid="Tunnel-1360-pin" endpinid="Led-1364-rPin" pointList="-288,-100,-280,-100" />
 
-<item itemtype="Connector" uid="connector-1886" startpinid="Tunnel-1337-pin" endpinid="Resistor-1325-rPin" pointList="144,-72,136,-72" />
+<item itemtype="Connector" uid="connector-2060" startpinid="Tunnel-1362-pin" endpinid="Led-1364-lPin" pointList="-240,-100,-248,-100" />
 
-<item itemtype="Connector" uid="connector-1887" startpinid="Tunnel-1335-pin" endpinid="Node-1342-1" pointList="80,-100,88,-100" />
+<item itemtype="Connector" uid="connector-2061" startpinid="Led-1365-rPin" endpinid="Tunnel-1359-pin" pointList="-280,-140,-288,-140" />
 
-<item itemtype="Connector" uid="connector-1888" startpinid="Ground-1334-Gnd" endpinid="BJT-1340-emiter" pointList="252,-100,248,-100" />
+<item itemtype="Connector" uid="connector-2062" startpinid="Led-1365-lPin" endpinid="Tunnel-1366-pin" pointList="-248,-140,-240,-140" />
 
-<item itemtype="Connector" uid="connector-1889" startpinid="Node-1331-2" endpinid="Resistor-1325-lPin" pointList="88,-72,104,-72" />
+<item itemtype="Connector" uid="connector-2063" startpinid="Resistor-1382-lPin" endpinid="Node-1381-0" pointList="104,32,88,32" />
 
-<item itemtype="Connector" uid="connector-1890" startpinid="Tunnel-1338-pin" endpinid="Node-1331-1" pointList="80,-72,88,-72" />
+<item itemtype="Connector" uid="connector-2064" startpinid="Resistor-1390-rPin" endpinid="Node-1384-0" pointList="232,96,232,104,88,104,88,60" />
 
-<item itemtype="Connector" uid="connector-1891" startpinid="Resistor-1341-lPin" endpinid="Node-1342-0" pointList="104,-100,88,-100" />
+<item itemtype="Connector" uid="connector-2065" startpinid="Tunnel-1379-pin" endpinid="Node-1384-1" pointList="80,60,88,60" />
 
-<item itemtype="Connector" uid="connector-1892" startpinid="Rail-1327-outnod" endpinid="Node-1329-0" pointList="216,-132,212,-132" />
+<item itemtype="Connector" uid="connector-2066" startpinid="Tunnel-1380-pin" endpinid="Node-1378-1" pointList="208,-12,212,-12,212,0" />
 
-<item itemtype="Connector" uid="connector-1893" startpinid="Tunnel-1361-pin" endpinid="Led-1363-lPin" pointList="-240,-120,-248,-120" />
+<item itemtype="Connector" uid="connector-2067" startpinid="Node-1381-2" endpinid="Resistor-1377-lPin" pointList="88,32,88,0,104,0" />
 
-<item itemtype="Connector" uid="connector-1894" startpinid="Tunnel-1358-pin" endpinid="Led-1363-rPin" pointList="-288,-120,-280,-120" />
+<item itemtype="Connector" uid="connector-2068" startpinid="Rail-1376-outnod" endpinid="Node-1378-0" pointList="216,0,212,0" />
 
-<item itemtype="Connector" uid="connector-1895" startpinid="Tunnel-1360-pin" endpinid="Led-1364-rPin" pointList="-288,-100,-280,-100" />
+<item itemtype="Connector" uid="connector-2069" startpinid="Tunnel-1374-pin" endpinid="Resistor-1373-rPin" pointList="144,60,136,60" />
 
-<item itemtype="Connector" uid="connector-1896" startpinid="Tunnel-1362-pin" endpinid="Led-1364-lPin" pointList="-240,-100,-248,-100" />
+<item itemtype="Connector" uid="connector-2070" startpinid="Tunnel-1388-pin" endpinid="BJT-1387-collector" pointList="208,32,216,32" />
 
-<item itemtype="Connector" uid="connector-1897" startpinid="Led-1365-rPin" endpinid="Tunnel-1359-pin" pointList="-280,-140,-288,-140" />
+<item itemtype="Connector" uid="connector-2071" startpinid="Ground-1386-Gnd" endpinid="BJT-1387-emiter" pointList="252,32,248,32" />
 
-<item itemtype="Connector" uid="connector-1898" startpinid="Led-1365-lPin" endpinid="Tunnel-1366-pin" pointList="-248,-140,-240,-140" />
+<item itemtype="Connector" uid="connector-2072" startpinid="Node-1378-2" endpinid="Tunnel-1389-pin" pointList="212,0,208,0" />
 
-<item itemtype="Connector" uid="connector-1899" startpinid="Resistor-1382-lPin" endpinid="Node-1381-0" pointList="104,32,88,32" />
+<item itemtype="Connector" uid="connector-2073" startpinid="Tunnel-1383-pin" endpinid="Resistor-1382-rPin" pointList="144,32,136,32" />
 
-<item itemtype="Connector" uid="connector-1900" startpinid="Resistor-1390-rPin" endpinid="Node-1384-0" pointList="232,96,232,104,88,104,88,60" />
+<item itemtype="Connector" uid="connector-2074" startpinid="Resistor-1390-lPin" endpinid="BJT-1387-base" pointList="232,64,232,56" />
 
-<item itemtype="Connector" uid="connector-1901" startpinid="Tunnel-1379-pin" endpinid="Node-1384-1" pointList="80,60,88,60" />
+<item itemtype="Connector" uid="connector-2075" startpinid="Tunnel-1375-pin" endpinid="Node-1381-1" pointList="80,32,88,32" />
 
-<item itemtype="Connector" uid="connector-1902" startpinid="Tunnel-1380-pin" endpinid="Node-1378-1" pointList="208,-12,212,-12,212,0" />
+<item itemtype="Connector" uid="connector-2076" startpinid="Node-1384-2" endpinid="Resistor-1373-lPin" pointList="88,60,104,60" />
 
-<item itemtype="Connector" uid="connector-1903" startpinid="Node-1381-2" endpinid="Resistor-1377-lPin" pointList="88,32,88,0,104,0" />
+<item itemtype="Connector" uid="connector-2077" startpinid="Tunnel-1385-pin" endpinid="Resistor-1377-rPin" pointList="144,0,136,0" />
 
-<item itemtype="Connector" uid="connector-1904" startpinid="Rail-1376-outnod" endpinid="Node-1378-0" pointList="216,0,212,0" />
+<item itemtype="Connector" uid="connector-2078" startpinid="Resistor-1422-rPin" endpinid="Node-1411-0" pointList="232,228,232,236,88,236,88,192" />
 
-<item itemtype="Connector" uid="connector-1905" startpinid="Tunnel-1374-pin" endpinid="Resistor-1373-rPin" pointList="144,60,136,60" />
+<item itemtype="Connector" uid="connector-2079" startpinid="Tunnel-1406-pin" endpinid="Node-1421-1" pointList="208,120,212,120,212,132" />
 
-<item itemtype="Connector" uid="connector-1906" startpinid="Tunnel-1388-pin" endpinid="BJT-1387-collector" pointList="208,32,216,32" />
+<item itemtype="Connector" uid="connector-2080" startpinid="Node-1421-2" endpinid="Tunnel-1418-pin" pointList="212,132,208,132" />
 
-<item itemtype="Connector" uid="connector-1907" startpinid="Ground-1386-Gnd" endpinid="BJT-1387-emiter" pointList="252,32,248,32" />
+<item itemtype="Connector" uid="connector-2081" startpinid="Tunnel-1414-pin" endpinid="Node-1411-1" pointList="80,192,88,192" />
 
-<item itemtype="Connector" uid="connector-1908" startpinid="Node-1378-2" endpinid="Tunnel-1389-pin" pointList="212,0,208,0" />
+<item itemtype="Connector" uid="connector-2082" startpinid="Tunnel-1407-pin" endpinid="Resistor-1419-rPin" pointList="144,132,136,132" />
 
-<item itemtype="Connector" uid="connector-1909" startpinid="Tunnel-1383-pin" endpinid="Resistor-1382-rPin" pointList="144,32,136,32" />
+<item itemtype="Connector" uid="connector-2083" startpinid="Ground-1420-Gnd" endpinid="BJT-1409-emiter" pointList="252,164,248,164" />
 
-<item itemtype="Connector" uid="connector-1910" startpinid="Resistor-1390-lPin" endpinid="BJT-1387-base" pointList="232,64,232,56" />
+<item itemtype="Connector" uid="connector-2084" startpinid="Resistor-1417-lPin" endpinid="Node-1423-0" pointList="104,164,88,164" />
 
-<item itemtype="Connector" uid="connector-1911" startpinid="Tunnel-1375-pin" endpinid="Node-1381-1" pointList="80,32,88,32" />
+<item itemtype="Connector" uid="connector-2085" startpinid="Node-1423-2" endpinid="Resistor-1419-lPin" pointList="88,164,88,132,104,132" />
 
-<item itemtype="Connector" uid="connector-1912" startpinid="Node-1384-2" endpinid="Resistor-1373-lPin" pointList="88,60,104,60" />
+<item itemtype="Connector" uid="connector-2086" startpinid="Node-1411-2" endpinid="Resistor-1412-lPin" pointList="88,192,104,192" />
 
-<item itemtype="Connector" uid="connector-1913" startpinid="Tunnel-1385-pin" endpinid="Resistor-1377-rPin" pointList="144,0,136,0" />
+<item itemtype="Connector" uid="connector-2087" startpinid="Resistor-1422-lPin" endpinid="BJT-1409-base" pointList="232,196,232,188" />
 
-<item itemtype="Connector" uid="connector-1914" startpinid="Resistor-1422-rPin" endpinid="Node-1411-0" pointList="232,228,232,236,88,236,88,192" />
+<item itemtype="Connector" uid="connector-2088" startpinid="Rail-1410-outnod" endpinid="Node-1421-0" pointList="216,132,212,132" />
 
-<item itemtype="Connector" uid="connector-1915" startpinid="Tunnel-1406-pin" endpinid="Node-1421-1" pointList="208,120,212,120,212,132" />
+<item itemtype="Connector" uid="connector-2089" startpinid="Tunnel-1413-pin" endpinid="BJT-1409-collector" pointList="208,164,216,164" />
 
-<item itemtype="Connector" uid="connector-1916" startpinid="Node-1421-2" endpinid="Tunnel-1418-pin" pointList="212,132,208,132" />
+<item itemtype="Connector" uid="connector-2090" startpinid="Tunnel-1408-pin" endpinid="Node-1423-1" pointList="80,164,88,164" />
 
-<item itemtype="Connector" uid="connector-1917" startpinid="Tunnel-1414-pin" endpinid="Node-1411-1" pointList="80,192,88,192" />
+<item itemtype="Connector" uid="connector-2091" startpinid="Tunnel-1415-pin" endpinid="Resistor-1417-rPin" pointList="144,164,136,164" />
 
-<item itemtype="Connector" uid="connector-1918" startpinid="Tunnel-1407-pin" endpinid="Resistor-1419-rPin" pointList="144,132,136,132" />
+<item itemtype="Connector" uid="connector-2092" startpinid="Tunnel-1416-pin" endpinid="Resistor-1412-rPin" pointList="144,192,136,192" />
 
-<item itemtype="Connector" uid="connector-1919" startpinid="Ground-1420-Gnd" endpinid="BJT-1409-emiter" pointList="252,164,248,164" />
+<item itemtype="Connector" uid="connector-2093" startpinid="Tunnel-1445-pin" endpinid="Led-1446-lPin" pointList="-108,-60,-116,-60" />
 
-<item itemtype="Connector" uid="connector-1920" startpinid="Resistor-1417-lPin" endpinid="Node-1423-0" pointList="104,164,88,164" />
+<item itemtype="Connector" uid="connector-2094" startpinid="Tunnel-1447-pin" endpinid="Led-1443-rPin" pointList="-156,-40,-148,-40" />
 
-<item itemtype="Connector" uid="connector-1921" startpinid="Node-1423-2" endpinid="Resistor-1419-lPin" pointList="88,164,88,132,104,132" />
+<item itemtype="Connector" uid="connector-2095" startpinid="Led-1440-lPin" endpinid="Tunnel-1441-pin" pointList="-116,-80,-108,-80" />
 
-<item itemtype="Connector" uid="connector-1922" startpinid="Node-1411-2" endpinid="Resistor-1412-lPin" pointList="88,192,104,192" />
+<item itemtype="Connector" uid="connector-2096" startpinid="Tunnel-1444-pin" endpinid="Led-1446-rPin" pointList="-156,-60,-148,-60" />
 
-<item itemtype="Connector" uid="connector-1923" startpinid="Resistor-1422-lPin" endpinid="BJT-1409-base" pointList="232,196,232,188" />
+<item itemtype="Connector" uid="connector-2097" startpinid="Led-1440-rPin" endpinid="Tunnel-1439-pin" pointList="-148,-80,-156,-80" />
 
-<item itemtype="Connector" uid="connector-1924" startpinid="Rail-1410-outnod" endpinid="Node-1421-0" pointList="216,132,212,132" />
+<item itemtype="Connector" uid="connector-2098" startpinid="Tunnel-1442-pin" endpinid="Led-1443-lPin" pointList="-108,-40,-116,-40" />
 
-<item itemtype="Connector" uid="connector-1925" startpinid="Tunnel-1413-pin" endpinid="BJT-1409-collector" pointList="208,164,216,164" />
+<item itemtype="Connector" uid="connector-2099" startpinid="Tunnel-1136-pin" endpinid="Node-1278-1" pointList="208,-276,212,-276,212,-264" />
 
-<item itemtype="Connector" uid="connector-1926" startpinid="Tunnel-1408-pin" endpinid="Node-1423-1" pointList="80,164,88,164" />
+<item itemtype="Connector" uid="connector-2100" startpinid="Led-1600-lPin" endpinid="Tunnel-1121-pin" pointList="-8,-256,0,-256" />
 
-<item itemtype="Connector" uid="connector-1927" startpinid="Tunnel-1415-pin" endpinid="Resistor-1417-rPin" pointList="144,164,136,164" />
+<item itemtype="Connector" uid="connector-2101" startpinid="Led-1600-rPin" endpinid="Tunnel-1118-pin" pointList="-40,-256,-48,-256" />
 
-<item itemtype="Connector" uid="connector-1928" startpinid="Tunnel-1416-pin" endpinid="Resistor-1412-rPin" pointList="144,192,136,192" />
+<item itemtype="Connector" uid="connector-2102" startpinid="Resistor-1040-lPin" endpinid="Tunnel-1044-pin" pointList="-300,-212,-308,-212" />
 
-<item itemtype="Connector" uid="connector-1929" startpinid="Tunnel-1445-pin" endpinid="Led-1446-lPin" pointList="-108,-60,-116,-60" />
+<item itemtype="Connector" uid="connector-2103" startpinid="Ground-1110-Gnd" endpinid="BJT-1038-emiter" pointList="-236,-188,-236,-196" />
 
-<item itemtype="Connector" uid="connector-1930" startpinid="Tunnel-1447-pin" endpinid="Led-1443-rPin" pointList="-156,-40,-148,-40" />
+<item itemtype="Connector" uid="connector-2105" startpinid="Ground-1111-Gnd" endpinid="BJT-1036-emiter" pointList="-132,-188,-132,-196" />
 
-<item itemtype="Connector" uid="connector-1931" startpinid="Led-1440-lPin" endpinid="Tunnel-1441-pin" pointList="-116,-80,-108,-80" />
+<item itemtype="Connector" uid="connector-2108" startpinid="Tunnel-1778-pin" endpinid="ResistorDip-1051-resistor6-ePin12" pointList="-412,-244,-404,-244" />
 
-<item itemtype="Connector" uid="connector-1932" startpinid="Tunnel-1444-pin" endpinid="Led-1446-rPin" pointList="-156,-60,-148,-60" />
+<item itemtype="Connector" uid="connector-2109" startpinid="ResistorDip-1051-resistor5-ePin10" endpinid="Tunnel-1777-pin" pointList="-404,-252,-412,-252" />
 
-<item itemtype="Connector" uid="connector-1933" startpinid="Led-1440-rPin" endpinid="Tunnel-1439-pin" pointList="-148,-80,-156,-80" />
+<item itemtype="Connector" uid="connector-2117" startpinid="Tunnel-647-pin" endpinid="mega328-1-PORTB5" pointList="-368,-136,-376,-136" />
 
-<item itemtype="Connector" uid="connector-1934" startpinid="Tunnel-1442-pin" endpinid="Led-1443-lPin" pointList="-108,-40,-116,-40" />
+<item itemtype="Connector" uid="connector-1973" startpinid="Tunnel-952-pin" endpinid="mega328-1-PORTB0" pointList="-432,-104,-424,-104" />
 
-<item itemtype="Connector" uid="connector-1935" startpinid="Tunnel-1136-pin" endpinid="Node-1278-1" pointList="208,-276,212,-276,212,-264" />
+<item itemtype="Connector" uid="connector-2104" startpinid="Tunnel-1045-pin" endpinid="Resistor-1042-lPin" pointList="-204,-212,-196,-212" />
 
-<item itemtype="Connector" uid="connector-1936" startpinid="Led-1600-lPin" endpinid="Tunnel-1121-pin" pointList="-8,-256,0,-256" />
+<item itemtype="Connector" uid="connector-2026" startpinid="Resistor-1291-lPin" endpinid="Node-2130-0" pointList="104,-380,88,-380" />
 
-<item itemtype="Connector" uid="connector-1937" startpinid="Led-1600-rPin" endpinid="Tunnel-1118-pin" pointList="-40,-256,-48,-256" />
+<item itemtype="Connector" uid="connector-2029" startpinid="Resistor-1288-rPin" endpinid="Node-2127-0" pointList="232,-316,232,-308,88,-308,88,-352" />
 
-<item itemtype="Connector" uid="connector-1938" startpinid="Resistor-1040-lPin" endpinid="Tunnel-1044-pin" pointList="-300,-212,-308,-212" />
+<item itemtype="Connector" uid="Connector-2126" startpinid="Fixed Voltage-2125-outnod" endpinid="Node-2127-1" pointList="76,-352,88,-352" />
 
-<item itemtype="Connector" uid="connector-1939" startpinid="Ground-1110-Gnd" endpinid="BJT-1038-emiter" pointList="-236,-188,-236,-196" />
+<item itemtype="Connector" uid="Connector-2128" startpinid="Node-2127-2" endpinid="Resistor-1292-lPin" pointList="88,-352,104,-352" />
 
-<item itemtype="Connector" uid="connector-1940" startpinid="Tunnel-1045-pin" endpinid="Resistor-1042-lPin" pointList="-204,-212,-196,-212" />
+<item itemtype="Connector" uid="Connector-2129" startpinid="Fixed Voltage-2124-outnod" endpinid="Node-2130-1" pointList="76,-380,88,-380" />
 
-<item itemtype="Connector" uid="connector-1941" startpinid="Ground-1111-Gnd" endpinid="BJT-1036-emiter" pointList="-132,-188,-132,-196" />
+<item itemtype="Connector" uid="connector-2023" startpinid="Node-1280-2" endpinid="Led-1285-lPin" pointList="200,-412,176,-412" />
 
-<item itemtype="Connector" uid="connector-1942" startpinid="Tunnel-1058-pin" endpinid="Resistor-1772-rPin" pointList="-568,-160,-568,-168" />
+<item itemtype="Connector" uid="connector-1996" startpinid="Tunnel-1052-pin" endpinid="ResistorDip-1051-resistor0-ePin0" pointList="-412,-292,-404,-292" />
 
-<item itemtype="Connector" uid="connector-1943" startpinid="Tunnel-1057-pin" endpinid="Resistor-1773-rPin" pointList="-556,-160,-556,-172" />
+<item itemtype="Connector" uid="connector-1980" startpinid="mega328-1-PORTD1" endpinid="Tunnel-877-pin" pointList="-424,-192,-432,-192" />
 
-<item itemtype="Connector" uid="connector-1944" startpinid="Tunnel-1778-pin" endpinid="ResistorDip-1051-resistor6-ePin12" pointList="-412,-244,-404,-244" />
-
-<item itemtype="Connector" uid="connector-1945" startpinid="ResistorDip-1051-resistor5-ePin10" endpinid="Tunnel-1777-pin" pointList="-404,-252,-412,-252" />
-
-<item itemtype="Connector" uid="connector-1946" startpinid="Tunnel-1781-pin" endpinid="BJT-1776-emiter" pointList="-524,-188,-524,-196" />
-
-<item itemtype="Connector" uid="connector-1947" startpinid="Resistor-1773-lPin" endpinid="BJT-1776-base" pointList="-556,-204,-556,-212,-548,-212" />
-
-<item itemtype="Connector" uid="connector-1948" startpinid="Fixed Voltage-1784-outnod" endpinid="Node-1791-0" pointList="-560,-240,-560,-240" />
-
-<item itemtype="Connector" uid="connector-1949" startpinid="BJT-1786-base" endpinid="Resistor-1772-lPin" pointList="-576,-212,-568,-212,-568,-200" />
-
-<item itemtype="Connector" uid="connector-1950" startpinid="Tunnel-1788-pin" endpinid="BJT-1786-emiter" pointList="-600,-188,-600,-196" />
-
-<item itemtype="Connector" uid="connector-1951" startpinid="BJT-1786-collector" endpinid="Node-1791-1" pointList="-600,-228,-600,-240,-560,-240" />
-
-<item itemtype="Connector" uid="connector-1952" startpinid="Node-1791-2" endpinid="BJT-1776-collector" pointList="-560,-240,-524,-240,-524,-228" />
+<item itemtype="Connector" uid="Connector-2131" startpinid="Node-2130-2" endpinid="Resistor-1294-lPin" pointList="88,-380,88,-412,104,-412" />
 
 </circuit>

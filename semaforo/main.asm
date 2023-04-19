@@ -16,7 +16,7 @@ jmp reset
 .org OC1Aaddr
 jmp Time_Interrupt
 
-digitos: .db 222, 254, 14, 250, 218, 204, 158, 182, 12, 126 ;230 é o 204
+digitos: .db 222, 254, 14, 250, 218, 204, 158, 182, 12, 126 
 
 Time_Interrupt:
 	push r16
@@ -25,28 +25,31 @@ Time_Interrupt:
 
 	inc cont ; Contador de 1 segundo 
 
-	unidades:
-		cpi uni, 0x39
-		brge dezenas
+	; Controlo as unidades. 0x30 equivale a posição onde está gravado o primeiro elemento de digitos, indo até 0x39.
+	cpi uni, 0x39
+	brge dezenas	; Se uni está no último elemento, então execute dezena.
 
-		inc uni
-		ldi ZL, 0
-		add ZL, uni
-		lpm D01, Z
+	; Controle de unidades
+	unidades:
+		inc uni			; Incremente um na unidade (vetor de forma decrescente, incrementar em uni, reduz um no valor do display)
+		ldi ZL, 0		; Coloque zero em ZL
+		add ZL, uni     ; Adicione uni em ZL, para pegar o proximo valor de unidade
+		lpm D01, Z		; carregue em D01, registrador responsável pela unidade
 
 		pop r16
 		out SREG, r16
 		pop r16
 		reti
 
-	dezenas:
-		ldi uni, 0x2F
-		inc dez
-		ldi ZL, 0
-		add ZL, dez
-		lpm D10, Z
+	; Controle de dezenas
+	dezenas:			
+		ldi uni, 0x2F ; Coloque uni na posição imediatamente antes do 9 na memória, pois incremento após essa função ser chamada
+		inc dez		  ; Incremente em dezenas
+		ldi ZL, 0	  ; Coloque 0 em ZL
+		add ZL, dez	  ; Adicione em ZL, o valor de dez, para pegar o próximo valor das dezenas
+		lpm D10, Z	  ; Carregue em D10, registrador responsável pela dezena
 
-		rjmp unidades
+		rjmp unidades	; Volte para unidades
 	
 reset:
 	LDI cont, 0
@@ -56,12 +59,12 @@ reset:
 	ldi temp, high(RAMEND)
 	out SPH, temp
 
-	;Configurnado Portas B e D para os LEDS como Sa�da  e Porta C para o Display
-	ldi temp, 0xFF
+	;Configurnado Portas B, C e D para os LEDS e display. B0 = unidades, B1 = dezenas, PORTD (1~7) = displays
+	ldi temp, 0x3F
 	out DDRB, temp
-	ldi temp, 0x3f
+	ldi temp, 0xFE
 	out DDRD, temp
-	ldi temp, 0xfe
+	ldi temp, 0xFF
 	out DDRC, temp
 	
 	.equ PRESCALE = 0b100 ;/256 prescale
@@ -108,23 +111,29 @@ reset:
 	;    ON/OFF: PB0				ON/OFF: PB1
 	;    NUMERO: PORTD 1~7			NUMERO: PORTD 1~7
 	E1: 
+		; Contador de tempo, iniciado em 0
 		LDI cont, 0
 		; ESTADO  1
-		; S1 = G // S2 = G // S3, S4, S5 = R
+		
+		; Carregue unidades, começando em 0 (80 segundos)
 		ldi uni, 0x39
 		ldi ZL, 0
 		add ZL, uni
 		lpm D01, Z
 
+		; Carregue dezenas, começando em 8 (80 segundos)
 		ldi dez, 0x31
 		ldi ZL, 0
 		add ZL, dez
 		lpm D10, Z
 
+		; S1 = G // S2 = G // S3, S4, S5 = R
 		ldi leds, 0b010100
 		out PORTB, leds
 		ldi leds, 0b001111
 		out PORTC, leds
+
+		; LOOP para printar o displays e checagem para ir para o próximo estado
 		disp:
 			ldi time, 25
 			cp cont, time 
@@ -229,26 +238,28 @@ reset:
 			brge chamar
 			call displays
 			rjmp disp7
-
+	
+	; Função criada para retornar e reiniciar.
 	chamar:
-		reti
+		rjmp E1
 
+	; Função para acender os displays
 	displays:
-		in temp, PORTB
-		andi temp, 0b111100
-		ori temp, 0b01
-		out PORTB, temp
-		out PORTD, D01
-		call delay1ms
+		in temp, PORTB		; Leia o PORTB para que não altere nada das configurações dos LEDs e salve em temp
+		andi temp, 0b111100 ; Limpe apenas os dois bits menos significativos, não consideramos os pinos B6 e B7, pois no arduino não são usados externamente
+		ori temp, 0b01		; Coloque temp, o futuro valor para PORTB, PB0 = 1 e em PB1 = 0
+		out PORTB, temp		; Escreva em PORTB, para manter a configuração e escrever apenas no pino do display das unidades
+		out PORTD, D01		; Escreva em PORTD o valor da unidade
+		call delay2ms		; Delay para enchergarmos melhor o valor
 
-		andi temp, 0b111100
-		ori temp, 0b10
-		out PORTB, temp
-		out PORTD, D10
-		call delay1ms
-		reti
+		andi temp, 0b111100 ; Limpe novamente, deixando apenas o status dos LEDs
+		ori temp, 0b10		; Coloque em temp, o futuro valor para PORTB, PB0 = 0 e em PB1 = 1
+		out PORTB, temp		; Escreva em PORTB, para manter a configuração e escrever apenas no pino do display das dezenas
+		out PORTD, D10		; Escreva em PORTD o valor da dezena
+		call delay2ms		; Delay para enchergarmos melhor o valor
+		reti				; retorne
 
-delay1ms:
+delay2ms:
 	.equ ClockMHz = 16;16MHz
 	.equ DelayMs = 2; 20ms
 	ldi r29, byte3 (ClockMHz * 1000 * DelayMs / 5)

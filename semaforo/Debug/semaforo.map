@@ -1,5 +1,5 @@
 
-AVRASM ver. 2.2.8  C:\Users\renil\OneDrive\Documentos\GitHub\Microcontroladores\semaforo\main.asm Mon Apr 17 22:33:47 2023
+AVRASM ver. 2.2.8  C:\Users\renil\OneDrive\Documentos\GitHub\Microcontroladores\semaforo\main.asm Tue Apr 18 21:32:16 2023
 
 
 EQU  SIGNATURE_000 0000001e
@@ -706,8 +706,8 @@ DEF  dez          r21
 CSEG reset        00000031
 CSEG Time_Interrupt 0000001d
 CSEG digitos      00000018
-CSEG unidades     00000021
 CSEG dezenas      0000002b
+CSEG unidades     00000023
 EQU  PRESCALE     00000004
 EQU  PRESCALE_DIV 00000100
 EQU  WGM          00000004
@@ -728,6 +728,6 @@ CSEG disp6        0000009d
 CSEG E7           000000a3
 CSEG disp7        000000a7
 CSEG chamar       000000ad
-CSEG delay1ms     000000bc
+CSEG delay2ms     000000bc
 EQU  ClockMHz     00000010
 EQU  DelayMs      00000002

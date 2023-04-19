@@ -22,27 +22,27 @@
   <FILE>semaforo.lss</FILE>
  </OUTPUT_FILES>
  <LABELS>
-  <reset><FILE>C:\Users\renil\OneDrive\Documentos\GitHub\Microcontroladores\semaforo\main.asm</FILE><LINE>51</LINE></reset>
+  <reset><FILE>C:\Users\renil\OneDrive\Documentos\GitHub\Microcontroladores\semaforo\main.asm</FILE><LINE>54</LINE></reset>
   <Time_Interrupt><FILE>C:\Users\renil\OneDrive\Documentos\GitHub\Microcontroladores\semaforo\main.asm</FILE><LINE>21</LINE></Time_Interrupt>
   <digitos><FILE>C:\Users\renil\OneDrive\Documentos\GitHub\Microcontroladores\semaforo\main.asm</FILE><LINE>19</LINE></digitos>
-  <unidades><FILE>C:\Users\renil\OneDrive\Documentos\GitHub\Microcontroladores\semaforo\main.asm</FILE><LINE>28</LINE></unidades>
-  <dezenas><FILE>C:\Users\renil\OneDrive\Documentos\GitHub\Microcontroladores\semaforo\main.asm</FILE><LINE>42</LINE></dezenas>
-  <E1><FILE>C:\Users\renil\OneDrive\Documentos\GitHub\Microcontroladores\semaforo\main.asm</FILE><LINE>110</LINE></E1>
-  <disp><FILE>C:\Users\renil\OneDrive\Documentos\GitHub\Microcontroladores\semaforo\main.asm</FILE><LINE>128</LINE></disp>
-  <E2><FILE>C:\Users\renil\OneDrive\Documentos\GitHub\Microcontroladores\semaforo\main.asm</FILE><LINE>134</LINE></E2>
-  <displays><FILE>C:\Users\renil\OneDrive\Documentos\GitHub\Microcontroladores\semaforo\main.asm</FILE><LINE>236</LINE></displays>
-  <disp2><FILE>C:\Users\renil\OneDrive\Documentos\GitHub\Microcontroladores\semaforo\main.asm</FILE><LINE>141</LINE></disp2>
-  <E3><FILE>C:\Users\renil\OneDrive\Documentos\GitHub\Microcontroladores\semaforo\main.asm</FILE><LINE>147</LINE></E3>
-  <disp3><FILE>C:\Users\renil\OneDrive\Documentos\GitHub\Microcontroladores\semaforo\main.asm</FILE><LINE>154</LINE></disp3>
-  <E4><FILE>C:\Users\renil\OneDrive\Documentos\GitHub\Microcontroladores\semaforo\main.asm</FILE><LINE>160</LINE></E4>
-  <disp4><FILE>C:\Users\renil\OneDrive\Documentos\GitHub\Microcontroladores\semaforo\main.asm</FILE><LINE>177</LINE></disp4>
-  <E5><FILE>C:\Users\renil\OneDrive\Documentos\GitHub\Microcontroladores\semaforo\main.asm</FILE><LINE>183</LINE></E5>
-  <disp5><FILE>C:\Users\renil\OneDrive\Documentos\GitHub\Microcontroladores\semaforo\main.asm</FILE><LINE>200</LINE></disp5>
-  <E6><FILE>C:\Users\renil\OneDrive\Documentos\GitHub\Microcontroladores\semaforo\main.asm</FILE><LINE>206</LINE></E6>
-  <disp6><FILE>C:\Users\renil\OneDrive\Documentos\GitHub\Microcontroladores\semaforo\main.asm</FILE><LINE>213</LINE></disp6>
-  <E7><FILE>C:\Users\renil\OneDrive\Documentos\GitHub\Microcontroladores\semaforo\main.asm</FILE><LINE>219</LINE></E7>
-  <disp7><FILE>C:\Users\renil\OneDrive\Documentos\GitHub\Microcontroladores\semaforo\main.asm</FILE><LINE>226</LINE></disp7>
-  <chamar><FILE>C:\Users\renil\OneDrive\Documentos\GitHub\Microcontroladores\semaforo\main.asm</FILE><LINE>233</LINE></chamar>
-  <delay1ms><FILE>C:\Users\renil\OneDrive\Documentos\GitHub\Microcontroladores\semaforo\main.asm</FILE><LINE>251</LINE></delay1ms>
+  <dezenas><FILE>C:\Users\renil\OneDrive\Documentos\GitHub\Microcontroladores\semaforo\main.asm</FILE><LINE>45</LINE></dezenas>
+  <unidades><FILE>C:\Users\renil\OneDrive\Documentos\GitHub\Microcontroladores\semaforo\main.asm</FILE><LINE>33</LINE></unidades>
+  <E1><FILE>C:\Users\renil\OneDrive\Documentos\GitHub\Microcontroladores\semaforo\main.asm</FILE><LINE>113</LINE></E1>
+  <disp><FILE>C:\Users\renil\OneDrive\Documentos\GitHub\Microcontroladores\semaforo\main.asm</FILE><LINE>137</LINE></disp>
+  <E2><FILE>C:\Users\renil\OneDrive\Documentos\GitHub\Microcontroladores\semaforo\main.asm</FILE><LINE>143</LINE></E2>
+  <displays><FILE>C:\Users\renil\OneDrive\Documentos\GitHub\Microcontroladores\semaforo\main.asm</FILE><LINE>247</LINE></displays>
+  <disp2><FILE>C:\Users\renil\OneDrive\Documentos\GitHub\Microcontroladores\semaforo\main.asm</FILE><LINE>150</LINE></disp2>
+  <E3><FILE>C:\Users\renil\OneDrive\Documentos\GitHub\Microcontroladores\semaforo\main.asm</FILE><LINE>156</LINE></E3>
+  <disp3><FILE>C:\Users\renil\OneDrive\Documentos\GitHub\Microcontroladores\semaforo\main.asm</FILE><LINE>163</LINE></disp3>
+  <E4><FILE>C:\Users\renil\OneDrive\Documentos\GitHub\Microcontroladores\semaforo\main.asm</FILE><LINE>169</LINE></E4>
+  <disp4><FILE>C:\Users\renil\OneDrive\Documentos\GitHub\Microcontroladores\semaforo\main.asm</FILE><LINE>186</LINE></disp4>
+  <E5><FILE>C:\Users\renil\OneDrive\Documentos\GitHub\Microcontroladores\semaforo\main.asm</FILE><LINE>192</LINE></E5>
+  <disp5><FILE>C:\Users\renil\OneDrive\Documentos\GitHub\Microcontroladores\semaforo\main.asm</FILE><LINE>209</LINE></disp5>
+  <E6><FILE>C:\Users\renil\OneDrive\Documentos\GitHub\Microcontroladores\semaforo\main.asm</FILE><LINE>215</LINE></E6>
+  <disp6><FILE>C:\Users\renil\OneDrive\Documentos\GitHub\Microcontroladores\semaforo\main.asm</FILE><LINE>222</LINE></disp6>
+  <E7><FILE>C:\Users\renil\OneDrive\Documentos\GitHub\Microcontroladores\semaforo\main.asm</FILE><LINE>228</LINE></E7>
+  <disp7><FILE>C:\Users\renil\OneDrive\Documentos\GitHub\Microcontroladores\semaforo\main.asm</FILE><LINE>235</LINE></disp7>
+  <chamar><FILE>C:\Users\renil\OneDrive\Documentos\GitHub\Microcontroladores\semaforo\main.asm</FILE><LINE>243</LINE></chamar>
+  <delay2ms><FILE>C:\Users\renil\OneDrive\Documentos\GitHub\Microcontroladores\semaforo\main.asm</FILE><LINE>262</LINE></delay2ms>
  </LABELS>
 </ASSEMBLER_INFO>

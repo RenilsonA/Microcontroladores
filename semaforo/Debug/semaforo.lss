@@ -1,5 +1,5 @@
 
-AVRASM ver. 2.2.8  C:\Users\renil\OneDrive\Documentos\GitHub\Microcontroladores\semaforo\main.asm Mon Apr 17 22:33:47 2023
+AVRASM ver. 2.2.8  C:\Users\renil\OneDrive\Documentos\GitHub\Microcontroladores\semaforo\main.asm Tue Apr 18 21:32:16 2023
 
 [builtin](2): Including file 'C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc\m328Pdef.inc'
 [builtin](2): Including file 'C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc\m328Pdef.inc'
@@ -1006,7 +1006,7 @@ AVRASM ver. 2.2.8  C:\Users\renil\OneDrive\Documentos\GitHub\Microcontroladores\
 000019 fa0e
 00001a ccda
 00001b b69e
-00001c 7e0c                      digitos: .db 222, 254, 14, 250, 218, 204, 158, 182, 12, 126 ;230 é o 204
+00001c 7e0c                      digitos: .db 222, 254, 14, 250, 218, 204, 158, 182, 12, 126 
                                  
                                  Time_Interrupt:
 00001d 930f                      	push r16
@@ -1015,28 +1015,31 @@ AVRASM ver. 2.2.8  C:\Users\renil\OneDrive\Documentos\GitHub\Microcontroladores\
                                  
 000020 9523                      	inc cont ; Contador de 1 segundo 
                                  
-                                 	unidades:
-000021 3349                      		cpi uni, 0x39
-000022 f444                      		brge dezenas
+                                 	; Controlo as unidades. 0x30 equivale a posição onde está gravado o primeiro elemento de digitos, indo até 0x39.
+000021 3349                      	cpi uni, 0x39
+000022 f444                      	brge dezenas	; Se uni está no último elemento, então execute dezena.
                                  
-000023 9543                      		inc uni
-000024 e0e0                      		ldi ZL, 0
-000025 0fe4                      		add ZL, uni
-000026 9194                      		lpm D01, Z
+                                 	; Controle de unidades
+                                 	unidades:
+000023 9543                      		inc uni			; Incremente um na unidade (vetor de forma decrescente, incrementar em uni, reduz um no valor do display)
+000024 e0e0                      		ldi ZL, 0		; Coloque zero em ZL
+000025 0fe4                      		add ZL, uni     ; Adicione uni em ZL, para pegar o proximo valor de unidade
+000026 9194                      		lpm D01, Z		; carregue em D01, registrador responsável pela unidade
                                  
 000027 910f                      		pop r16
 000028 bf0f                      		out SREG, r16
 000029 910f                      		pop r16
 00002a 9518                      		reti
                                  
-                                 	dezenas:
-00002b e24f                      		ldi uni, 0x2F
-00002c 9553                      		inc dez
-00002d e0e0                      		ldi ZL, 0
-00002e 0fe5                      		add ZL, dez
-00002f 9184                      		lpm D10, Z
+                                 	; Controle de dezenas
+                                 	dezenas:			
+00002b e24f                      		ldi uni, 0x2F ; Coloque uni na posição imediatamente antes do 9 na memória, pois incremento após essa função ser chamada
+00002c 9553                      		inc dez		  ; Incremente em dezenas
+00002d e0e0                      		ldi ZL, 0	  ; Coloque 0 em ZL
+00002e 0fe5                      		add ZL, dez	  ; Adicione em ZL, o valor de dez, para pegar o próximo valor das dezenas
+00002f 9184                      		lpm D10, Z	  ; Carregue em D10, registrador responsável pela dezena
                                  
-000030 cff0                      		rjmp unidades
+000030 cff2                      		rjmp unidades	; Volte para unidades
                                  	
                                  reset:
 000031 e020                      	LDI cont, 0
@@ -1046,12 +1049,12 @@ AVRASM ver. 2.2.8  C:\Users\renil\OneDrive\Documentos\GitHub\Microcontroladores\
 000034 e008                      	ldi temp, high(RAMEND)
 000035 bf0e                      	out SPH, temp
                                  
-                                 	;Configurnado Portas B e D para os LEDS como Sa�da  e Porta C para o Display
-000036 ef0f                      	ldi temp, 0xFF
+                                 	;Configurnado Portas B, C e D para os LEDS e display. B0 = unidades, B1 = dezenas, PORTD (1~7) = displays
+000036 e30f                      	ldi temp, 0x3F
 000037 b904                      	out DDRB, temp
-000038 e30f                      	ldi temp, 0x3f
+000038 ef0e                      	ldi temp, 0xFE
 000039 b90a                      	out DDRD, temp
-00003a ef0e                      	ldi temp, 0xfe
+00003a ef0f                      	ldi temp, 0xFF
 00003b b907                      	out DDRC, temp
                                  	
                                  	.equ PRESCALE = 0b100 ;/256 prescale
@@ -1097,23 +1100,29 @@ AVRASM ver. 2.2.8  C:\Users\renil\OneDrive\Documentos\GitHub\Microcontroladores\
                                  	;    ON/OFF: PB0				ON/OFF: PB1
                                  	;    NUMERO: PORTD 1~7			NUMERO: PORTD 1~7
                                  	E1: 
+                                 		; Contador de tempo, iniciado em 0
 00004e e020                      		LDI cont, 0
                                  		; ESTADO  1
-                                 		; S1 = G // S2 = G // S3, S4, S5 = R
+                                 		
+                                 		; Carregue unidades, começando em 0 (80 segundos)
 00004f e349                      		ldi uni, 0x39
 000050 e0e0                      		ldi ZL, 0
 000051 0fe4                      		add ZL, uni
 000052 9194                      		lpm D01, Z
                                  
+                                 		; Carregue dezenas, começando em 8 (80 segundos)
 000053 e351                      		ldi dez, 0x31
 000054 e0e0                      		ldi ZL, 0
 000055 0fe5                      		add ZL, dez
 000056 9184                      		lpm D10, Z
                                  
+                                 		; S1 = G // S2 = G // S3, S4, S5 = R
 000057 e114                      		ldi leds, 0b010100
 000058 b915                      		out PORTB, leds
 000059 e01f                      		ldi leds, 0b001111
 00005a b918                      		out PORTC, leds
+                                 
+                                 		; LOOP para printar o displays e checagem para ir para o próximo estado
                                  		disp:
 00005b e139                      			ldi time, 25
 00005c 1723                      			cp cont, time 
@@ -1218,26 +1227,28 @@ AVRASM ver. 2.2.8  C:\Users\renil\OneDrive\Documentos\GitHub\Microcontroladores\
 0000a9 f41c                      			brge chamar
 0000aa 940e 00ae                 			call displays
 0000ac cffa                      			rjmp disp7
-                                 
+                                 	
+                                 	; Função criada para retornar e reiniciar.
                                  	chamar:
-0000ad 9518                      		reti
+0000ad cfa0                      		rjmp E1
                                  
+                                 	; Função para acender os displays
                                  	displays:
-0000ae b105                      		in temp, PORTB
-0000af 730c                      		andi temp, 0b111100
-0000b0 6001                      		ori temp, 0b01
-0000b1 b905                      		out PORTB, temp
-0000b2 b99b                      		out PORTD, D01
-0000b3 940e 00bc                 		call delay1ms
+0000ae b105                      		in temp, PORTB		; Leia o PORTB para que não altere nada das configurações dos LEDs e salve em temp
+0000af 730c                      		andi temp, 0b111100 ; Limpe apenas os dois bits menos significativos, não consideramos os pinos B6 e B7, pois no arduino não são usados externamente
+0000b0 6001                      		ori temp, 0b01		; Coloque temp, o futuro valor para PORTB, PB0 = 1 e em PB1 = 0
+0000b1 b905                      		out PORTB, temp		; Escreva em PORTB, para manter a configuração e escrever apenas no pino do display das unidades
+0000b2 b99b                      		out PORTD, D01		; Escreva em PORTD o valor da unidade
+0000b3 940e 00bc                 		call delay2ms		; Delay para enchergarmos melhor o valor
                                  
-0000b5 730c                      		andi temp, 0b111100
-0000b6 6002                      		ori temp, 0b10
-0000b7 b905                      		out PORTB, temp
-0000b8 b98b                      		out PORTD, D10
-0000b9 940e 00bc                 		call delay1ms
-0000bb 9518                      		reti
+0000b5 730c                      		andi temp, 0b111100 ; Limpe novamente, deixando apenas o status dos LEDs
+0000b6 6002                      		ori temp, 0b10		; Coloque em temp, o futuro valor para PORTB, PB0 = 0 e em PB1 = 1
+0000b7 b905                      		out PORTB, temp		; Escreva em PORTB, para manter a configuração e escrever apenas no pino do display das dezenas
+0000b8 b98b                      		out PORTD, D10		; Escreva em PORTD o valor da dezena
+0000b9 940e 00bc                 		call delay2ms		; Delay para enchergarmos melhor o valor
+0000bb 9518                      		reti				; retorne
                                  
-                                 delay1ms:
+                                 delay2ms:
                                  	.equ ClockMHz = 16;16MHz
                                  	.equ DelayMs = 2; 20ms
 0000bc e0d0                      	ldi r29, byte3 (ClockMHz * 1000 * DelayMs / 5)
@@ -1286,7 +1297,7 @@ fmulsu:   0 icall :   0 ijmp  :   0 in    :   2 inc   :   3 jmp   :   2
 ld    :   0 ldd   :   0 ldi   :  50 lds   :   1 lpm   :  16 lsl   :   0 
 lsr   :   0 mov   :   0 movw  :   0 mul   :   0 muls  :   0 mulsu :   0 
 neg   :   0 nop   :   0 or    :   0 ori   :   2 out   :  24 pop   :   2 
-push  :   2 rcall :   0 ret   :   1 reti  :   3 rjmp  :   8 rol   :   0 
+push  :   2 rcall :   0 ret   :   1 reti  :   2 rjmp  :   9 rol   :   0 
 ror   :   0 sbc   :   0 sbci  :   2 sbi   :   0 sbic  :   0 sbis  :   0 
 sbiw  :   0 sbr   :   1 sbrc  :   0 sbrs  :   0 sec   :   0 seh   :   0 
 sei   :   1 sen   :   0 ser   :   0 ses   :   0 set   :   0 sev   :   0 
