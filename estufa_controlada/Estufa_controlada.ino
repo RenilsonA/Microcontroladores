@@ -1,3 +1,15 @@
+/*
+    Projeto da estufa controlada, com sensores DHT11 (umidade e temperatura),
+    higrômetro (umidade do solo), fototrânsistor (sensor IR receptor), e atuadores 
+    como Cooler, Bomba de água, LEDs ultravioletas.
+    Integrantes:
+      Antônio Carlos,
+      José Renilson,
+      Monique Moreira,
+      Rafael Augusto.
+    Período: 2022.2.
+*/
+
 #include <LiquidCrystal.h>
 #include <dht.h>
 #include <TimerOne.h>
